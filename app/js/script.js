@@ -10,7 +10,7 @@
  })(jQuery);*/ 
 
 $(document).ready(function(){
-
+	$('.main-left-menu').easytree();
 	/* ###### init EasyDropDown style for selects  ######*/
 	/* ###### bower i easydropdown  ######*/
 	/*<select class="dropdown"> add class (dropdown)
@@ -41,17 +41,16 @@ $(document).ready(function(){
 	/* ###### init OwlCarousel2  ######*/
 	/*!!! add class owlCarousel !!!*/
 	/* ###### bower i OwlCarousel2 ######*/
-	// $("#owl-example").owlCarousel({
-	//  	items : 1,
-	//  	margin:50,
-	//  	autoHeight : true,
-	//  	pagination : false,
-	//  	autoPlay : true,
-	//  	singleItem:true,
-	//  	nav:true,
-	// 		navText:['<i class="fa fa-arrow-circle-o-left"></i>','<i class="fa fa-arrow-circle-o-right"></i>']
-	//  	}
-	//  ); 	
+	$(".main-right-slider").owlCarousel({
+	 	items : 1,
+	 	autoHeight : true,
+	 	pagination : false,
+	 	autoPlay : true,
+	 	singleItem:true,
+	 	nav:false,
+			
+	 	}
+	 ); 	
 
 	/* ###### init validate form  ######*/
 	/* ###### bower i jquery-validation ######*/
