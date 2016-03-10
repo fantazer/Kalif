@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+	//Include header
+	include ./block_html/head.jade
+body
+	wraper
+		h1 Test mixins
+		mixin Article(name,text)
+			h2 #{name}
+			p #{text}
+
+		+Article('Первый Миксин','Lorem ipsum dolor sit amet')
+		+Article('Второй Миксин','Lorem ipsum dolor sit amet')
+		P проверка
+		- each val in menu 
+			#{val['item']}
+
+	//Include Footer
+	include ./block_html/script.jade
