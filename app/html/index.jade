@@ -50,7 +50,8 @@ body
 			.menu-cat-wrap
 				.menu-cat-product 
 					.menu-cat-product-title 
-						a(href="") Каталог товаров
+						i.fa.fa-bars
+						span Каталог товаров
 					.menu-cat-product-sub
 						.menu-cat-product-sub-el
 							- for (var a = 0; a < 8; a++)
@@ -86,18 +87,19 @@ body
 									- each val in menu 
 										li
 											a(href='#') #{val}
-				.title.title-border Отзывы 
-				.main-left-review
-					- for (var c = 0; c < 3; c++)
-						.main-left-review-el
-							.main-left-review-el-top
-								.main-left-review-el-img
-									img(src="img/product-1.jpg", alt="")
-								.main-left-review-el-info
-									.main-left-review-title Наименование товара
-									.main-left-review-name Сергей Попов
-									.main-left-review-date 02.12.2014
-							.main-left-review-el-bot  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolore ducimus totam quibusdam ad eligendi voluptates quod aliquid quaerat. Incidunt!
+				.main-left-review-wrap
+					.title.title-border Отзывы 
+					.main-left-review
+						- for (var c = 0; c < 3; c++)
+							.main-left-review-el
+								.main-left-review-el-top
+									.main-left-review-el-img
+										img(src="img/product-1.jpg", alt="")
+									.main-left-review-el-info
+										.main-left-review-title Наименование товара
+										.main-left-review-name Сергей Попов
+										.main-left-review-date 02.12.2014
+								.main-left-review-el-bot  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolore ducimus totam quibusdam ad eligendi voluptates quod aliquid quaerat. Incidunt!
 
 			//Right-content
 			.main-right
@@ -113,17 +115,17 @@ body
 						.main-adv-el-text Сервис
 					.main-adv-el
 						.main-adv-el-img
-							img(src="img/icon-service.jpg", alt="")
+							img(src="img/icon-quality.jpg", alt="")
 						.main-adv-el-text Качетсво
 					.main-adv-el
 						.main-adv-el-img
-							img(src="img/icon-service.jpg", alt="")
+							img(src="img/icon-lowpay.jpg", alt="")
 						.main-adv-el-text Низкие цены
 				
 				.title.title-border Наши лучшие товары
 				
 				.product-card-wraper
-					- for (var d = 0; d < 3; d++)
+					- for (var d = 0; d < 6; d++)
 						.product-card-el
 							.product-card-view
 								.product-card-reiting
@@ -139,7 +141,7 @@ body
 				.title.title-border Рекомендуемые товары
 				
 				.product-card-wraper
-					- for (var d = 0; d < 3; d++)
+					- for (var d = 0; d < 6; d++)
 						.product-card-el
 							.product-card-view
 								.product-card-reiting

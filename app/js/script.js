@@ -11,6 +11,15 @@
 
 $(document).ready(function(){
 	$('.main-left-menu').easytree();
+
+
+   $('.menu-cat-product').click(function(){
+   	if ($(window).width() <= '480'){
+			$('.main-left-menu').slideToggle()
+		}
+	})
+
+	
 	/* ###### init EasyDropDown style for selects  ######*/
 	/* ###### bower i easydropdown  ######*/
 	/*<select class="dropdown"> add class (dropdown)

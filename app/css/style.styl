@@ -33,35 +33,73 @@ body
 			color yellow
 			text-decoration underline
 .top-menu-wrap
+	+below(960px)
+		padding-right 20px
+		justify-content center
+	+below(480px)
+		flex(around)
+		padding 0
+		a
+			font-size 12px
+			margin 0
 	flex(mid)
 	height 40px
 	justify-content flex-end
 	
 .header-wraper
+	+below(480px)
+		flex-wrap wrap
+		flex(mid)
+		height auto
+		padding 5px
 	padding 15px 0
 	flex(between)
 	height 110px
 //.main-cont
-
+.header-basket-inf-wrap
+	+below(460px)
+		width 100%
+		flex-wrap no-wrap
 .header-logo
+	+below(480px)
+		width 100%
 	flex(mid)
 .header-contact
+	+below(760px)
+		margin 20px
+		.header-contact-phone,
+		.header-contact-email
+			font-size 24px
+			margin 5px
+	+below(480px)
+		.header-contact-phone,
+		.header-contact-email
+			font-size 14px
+	+below(460px)
+		flex-flow row
+		margin 10px
 	flex(around)
 	flex-flow column
 	height 100%
 .header-contact-phone
+	+below(760px)
+		font-size 16px
 	color #364657
 	font-family Arial
 	font-size 22px
 	font-weight 700
 	line-height 16px
 .header-contact-email
+	+below(760px)
+		font-size 16px
 	color #364657
 	font-family Arial
 	font-size 22px
 	font-weight 700
 	line-height 16px
 .header-nav
+	+below(760px)
+		display none
 	flex(between)
 	flex-flow column
 	height 100%
@@ -101,6 +139,8 @@ body
 	flex-flow column
 	align-items flex-start
 .header-basket-inf-title
+	+below(380px)
+		font-size 12px
 	font-family Arial
 	font-size 15px
 	font-weight 700
@@ -123,27 +163,75 @@ body
 	line-height 16px
 	color grey-text
 .header-wraper-el
+	+below(760px)
+		width 33% 
+	+below(480px)
+		width 100%
 	width 25%
 	height 100%
 .header-basket-wrap
+	+below(480px)
+		width 100%
+		flex-wrap wrap
 	width 80%
 	flex(mid)
 	flex-flow column
-
+.header-basket-inf-wrap-el
+	+below(480px)
+		flex(between)
+		width 70%
+	+below(380px)
+		width 100%
+		.bold-text
+			font-size 12px
 .header-basket-inf-wrap
+	+below(480px)
+		width 100%
+		flex(mid)
+		flex-wrap no-wrap
 	display flex
-	
+
+.main-left-review-wrap
+	+below(480px)
+		display none
 .header-basket-inf-wrap-img
 	margin-right 10px
 	
 //.menu-cat
 .menu-cat-product
+	+below(760px)
+		order 2
+		width 50%
+		padding 15px
+		border: 3px solid #2A4457;
 	width 220px
 	height 100%
 	flex(mid)
 	background yellow
 	position relative
+.menu-cat-want
+	+below(760px)
+		order 3
+		width 50%
+		padding 15px
+		border: 3px solid #2A4457;
+	+below(480px)
+		font-size 10px
+		text-transform uppercase
+		height auto
+	+below(380px)
+		font-size 9px
+	width 220px
+	height 100%
+	flex(mid)
+	background yellow
 .menu-cat-search
+	+below(760px)
+		width 100%
+		order 1
+		padding 10px
+		input
+			width 90%
 	width 55%
 	background main-color
 	flex(mid)
@@ -162,17 +250,20 @@ body
 	margin-top -12px
 	background-size cover
 	bgi('icon-search.png')
-.menu-cat-want
-	width 220px
-	height 100%
-	flex(mid)
-	background yellow
+	
 //.menu-cat-want-text
+
 .menu-cat-wrap
+	+below(760px)
+		flex-wrap wrap
+		height auto
+		margin-bottom 0
 	display flex
 	height 55px
 	margin-bottom 20px
 .menu-cat-search-wrap
+	+below(760px)
+		width 90%
 	width 80%
 	position relative
 .content
@@ -184,22 +275,39 @@ body
 //.main-cont
 //.footer-wrap
 .footer-head
-	height 145px
+	+below(760px)
+		flex-wrap wrap
+	//height 145px
 	flex(mid)
 	padding 20px 0
 .footer-head-el
+	+below(760px)
+		&:nth-child(1)
+			width 100%
+			margin-bottom 20px
+		width 33%
 	width 25%
 	flex(around)
 	flex-flow column
 	height 100%
 	a
+		+below(380px)
+			font-size 9px
+			text-align center
 		color white
 		font-size 12px
+		margin-bottom 10px
+		text-align center
 .footer-contact
 	padding 10px 0
 .footer-contact-info
 	flex(between)
+	flex-wrap wrap
 .footer-contact-info-write
+	+below(480px)
+		width 100%
+		text-align center
+		margin-bottom 20px
 	color #98c3d9
 	font-family "Trebuchet MS"
 	font-size 18px
@@ -220,10 +328,21 @@ body
 	font-weight 700
 	line-height 16px
 .footer-contact-info-pay
+	+below(760px)
+		width 100%
+		flex(mid)
+		margin-top 15px
+	+below(480px)
+		display none
 	flex(between)
 	img
 		margin-left 20px
 .footer-contact-soc
+	+below(760px)
+		flex(mid)
+		flex-wrap wrap
+		flex-flow column
+		margin-top 0
 	flex(between)
 	margin-top 20px
 	.fa
@@ -237,21 +356,50 @@ body
 		height 30px
 		width 30px
 		text-align center
-		
+.footer-contact-soc-left
+	+below(760px)
+		width 100%
+		margin 10px
+		flex(mid)
 .footer-contact-soc-right
+	+below(760px)
+		width 100%
+		flex(mid)
+	+below(480px)
+		display none
 	display flex
 	img
 		margin-left 10px
-		
+
+.main-left-menu
+	+below(480px)
+		margin-top -10px
+		display none
 .menu-cat-product-title
-	a
+	span
+		+below(480px)
+			font-size 12px
+		+below(380px)
+			font-size 9px
 		font-family Arial
 		font-size 14px
 		font-weight 400
 		text-transform uppercase
 		color main-color
 		position relative
+	.fa-bars
+		display none
+		+below(480px)
+			display block
+			left 5px
+			margin-top -7px
+		position absolute
+		top 50%
+		left 15px
+		margin-top -8px
 	&:before
+		+below(760px)
+			display none
 		content ''
 		width: 0;
 		height: 0;
@@ -290,6 +438,8 @@ body
 			content ''
 			border 0px!important;
 .menu-cat-product-sub
+	+below(760px)
+		display none!important
 	position absolute
 	top 55px
 	left 0
@@ -340,6 +490,16 @@ body
 	margin-bottom 10px
 	font-weight 400
 .easytree-container
+	+below(760px)
+		width 100%
+		margin-bottom 20px
+		.easytree-title
+			font-size 18px
+			color white!important
+			text-decoration none!important
+		li
+			background main-color!important
+			padding 10px!important
 	margin 0
 	margin-bottom 40px
 	ul
@@ -348,16 +508,28 @@ body
 			text-decoration none!important
 			color #898989!important
 
+.easytree-title
+	+below(960px)
+		font-size 12px
 .main-left
+	+below(760px)
+		col(1)
 	col(0.22)
 .main-right
+	+below(760px)
+		col(1)
+		padding-left 0
 	col(0.78)
 	padding-left 15px
 .main-right-slider
+	+below(480px)
+		margin-bottom 20px
 	img
 		width 100%
 		
 .main-adv
+	+below(480px)
+		display none
 	margin 20px 0px
 	width 100%
 	margin-bottom 40px
@@ -387,6 +559,9 @@ ul.easytree-container ul
 	
 //.main-left-review
 .main-left-review-el
+	+below(760px)
+		col(1/3)
+		border-bottom 1px solid #DEDEDE!important
 	margin-bottom 15px
 	padding-bottom 15px
 	border-bottom 1px solid #DEDEDE
@@ -423,6 +598,10 @@ ul.easytree-container ul
 	cf()
 .product-card-el
 	col(1/3,cycle:3)
+	+below(780px)
+		col(1/2, uncycle: 3,cycle:2)
+	//+below(380px)
+		//col(1, uncycle: 2,cycle:1)
 	margin-bottom 30px
 .product-card-view
 	padding 10px
@@ -430,6 +609,8 @@ ul.easytree-container ul
 //.product-card-reiting
 .product-card-img
 	img
+		+below(380px)
+			width 80%
 		display block
 		margin 0 auto
 		width 100%
@@ -439,6 +620,11 @@ ul.easytree-container ul
 	line-height 16px
 	text-align center
 .product-card-review
+	+below(480px)
+		width 100%
+		text-align center
+		font-size 16px
+		font-weight 400
 	color #9d9d9d
 	font-family Arial
 	font-size 10px
@@ -449,11 +635,12 @@ ul.easytree-container ul
 	display inline-block
 .product-card-but
 	padding 10px
-	height 50px
 	flex(mid)
 	flex-flow column
 	background yellow
 .product-card-price
+	+below(760px)
+		font-size 18px
 	color black
 	font-family Arial
 	font-size 12px
