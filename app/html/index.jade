@@ -4,89 +4,19 @@ html(lang="en")
 	include ./block_html/head.jade
 	include ./block_html/const.jade
 body
-
-	//Top-menu
-	.top-menu
-		.main-cont
-			.top-menu-wrap 
-				a(href="#") О нас
-				a(href="#") Доставка
-				a(href="#") Оплата
-				a(href="#") Новости
-				a(href="#") Контакты
-	//Header
-	.header
-		.main-cont
-			.header-wraper
-				a(href="/").header-logo.header-wraper-el
-					img(src="img/main-logo.png", alt="")
-				.header-contact.header-wraper-el
-					.header-contact-phone 8 900 555 22 33
-					.header-contact-email Kalif@yandex.ru
-				.header-nav.header-wraper-el
-					a(href="#").header-nav-el Мои закладки
-					a(href="#").header-nav-el Просмотреть товары
-					a(href="#").header-nav-el Обратная связь
-				.header-basket.header-wraper-el
-					.header-basket-wrap
-						.header-basket-top
-							a(href="#").header-basket-reg Регистрация
-							a(href="#").header-basket-enter Вход
-						.header-basket-inf-wrap
-							.header-basket-inf-wrap-img
-								img(src="img/icon-basket.png", alt="")
-							.header-basket-inf-wrap-el
-								.header-basket-inf-title Корзина
-								.header-basket-inf-number
-									span.bold-text 5
-									span товаров 
-								.header-basket-inf-cost
-									span на сумму 
-									span.bold-text 50 456 руб.
 	
-	//Menu search
-	.menu-cat
-		.main-cont
-			.menu-cat-wrap
-				.menu-cat-product 
-					.menu-cat-product-title 
-						i.fa.fa-bars
-						span Каталог товаров
-					.menu-cat-product-sub
-						.menu-cat-product-sub-el
-							- for (var a = 0; a < 8; a++)
-								.first-lvl
-									a(href="#") Первый уровень
-									.menu-cat-product-sub-el
-										- for (var b = 0; b < 4; b++)
-											.second-lvl
-												a(href="#") Второй уровень
-												.menu-cat-product-sub-el
-													.three-lvl
-														a(href="#") Третий уровень
-										
-
-				.menu-cat-search
-					.menu-cat-search-wrap
-						input(type="text" placeholder=" Что ищем? " id='main-search')
-						label(for="main-search")
-				.menu-cat-want
-					.menu-cat-want-text Хочу найти
+	//Include Header
+	include ./block_html/header.jade
 	
-	//content
+	//Content
 	.main-cont
 		.content
-			//Left-menu
+			//Left-content
 			.main-left
-				.main-left-menu
-					ul
-						- var menu=['Кальяны','Элеткронные кальяны','Табак','Бестабачная продукция','Уголь','Горелки, плитки, газ','Комплектующие','Аксессуары']
-						- each val in menu 
-							li #{val}
-								ul
-									- each val in menu 
-										li
-											a(href='#') #{val}
+				//Left-menu
+				include ./block_html/left-menu.jade
+				
+				//Review
 				.main-left-review-wrap
 					.title.title-border Отзывы 
 					.main-left-review
@@ -99,7 +29,7 @@ body
 										.main-left-review-title Наименование товара
 										.main-left-review-name Сергей Попов
 										.main-left-review-date 02.12.2014
-								.main-left-review-el-bot  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolore ducimus totam quibusdam ad eligendi voluptates quod aliquid quaerat. Incidunt!
+								.main-left-review-el-bot  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolore ducimus totam quibusdam ad eligendi voluptates quod aliquid quaerat. Incidunt!ASDASD
 
 			//Right-content
 			.main-right
@@ -154,50 +84,14 @@ body
 								.product-card-price 3525 руб.
 								.product-card-getText в корзину
 
+				.title.title-border Интернет магазин KALIF24.RU
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ex velit, repellendus iure tenetur voluptate. Aperiam nostrum qui commodi omnis, ipsa laboriosam delectus atque aliquam necessitatibus, ullam cupiditate maiores quos dolore voluptatum. Animi quos, ducimus, reprehenderit a vel distinctio inventore?
 
-	//Footer
-	.footer
-		.main-cont
-			.footer-wrap
-				.footer-head
-					.footer-head-el
-						img(src="img/footer-logo.png", alt="")
-					.footer-head-el
-						a(href="#") Кальяны
-						a(href="#") Элеткронные кальяны
-						a(href="#") Табак
-						a(href="#") Бестабачная продукция
-					.footer-head-el
-						a(href="#") Уголь
-						a(href="#") Горелки, плитки, газ
-						a(href="#") Комплектующие
-						a(href="#") Аксессуары
-					.footer-head-el
-						a(href="#") О нас
-						a(href="#") Доставка
-						a(href="#") Оплата
-						a(href="#") Контакты
-	.footer-contact
-		.main-cont
-			.footer-contact-wraper
-				.footer-contact-info
-					.footer-contact-info-write Напишите нам
-					.footer-contact-info-phone #{phone}
-					.footer-contact-info-mail #{mail}
-					.footer-contact-info-pay 
-						- for (var x = 0; x < 5; x++)
-							img(src="img/icon-pay-#{x+1}.png", alt="")
-				.footer-contact-soc
-					.footer-contact-soc-left
-						i.fa.fa-facebook
-						i.fa.fa-vk
-						i.fa.fa-twitter
-						i.fa.fa-google-plus
-						i.fa.fa-youtube
-						i.fa.fa-instagram
-					.footer-contact-soc-right
-						- for (var y = 0; y < 7; y++)
-							img(src="img/icon-footer-#{y+1}.png", alt="")
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ex velit, repellendus iure tenetur voluptate. Aperiam nostrum qui commodi omnis, ipsa laboriosam delectus atque aliquam necessitatibus, ullam cupiditate maiores quos dolore voluptatum. Animi quos, ducimus, reprehenderit a vel distinctio inventore?
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis at voluptas eum, eligendi unde ad commodi nostrum soluta, sint tenetur earum perferendis quam eos quibusdam? Delectus ab nam molestias doloremque!20
 
-	//Include Footer
+	//Include footer
+	include ./block_html/footer.jade
+
+	//Include scripts
 	include ./block_html/script.jade

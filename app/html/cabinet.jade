@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+html(lang="en")
+	//Include header
+	include ./block_html/head.jade
+	include ./block_html/const.jade
+body
+	
+	//Include Header
+	include ./block_html/header.jade
+	
+	//Content
+	.main-cont
+		.content
+			.cabinet-wrap
+				.part-title Личный кабинет
+				
+				.cabinet-tab 
+					ul
+						li 
+							a(href="#cabinet-tab-1") Мои заказы
+						li 
+							a(href="#cabinet-tab-2") Избранное
+						li 
+							a(href="#cabinet-tab-3") Корзина
+						li 
+							a(href="#cabinet-tab-4") Личные данные
+					.cabinet-tab-el#cabinet-tab-1.cabinet-order
+						.cabinet-order-title Мои заказы
+						table.cabinet-order-table
+							thead
+								tr
+									th № Заказа
+									th Статус
+									th Дата
+									th Способ доставки
+									th Стоимость
+							tbody
+								- for (var a = 0; a < 4; a++)
+									tr
+										td Не присвоен
+										td Не присвоен
+										td Не присвоен
+										td Не присвоен
+										td Не присвоен
+						.cabinet-order-review-pagination
+							include ./block_html/pagination.jade
+							
+
+						.cabinet-order-review
+							.cabinet-order-review-title Написать отзыв о работе магазина
+							.cabinet-order-review-top
+								.cabinet-order-review-top-left
+									label Оценка
+									.cabinet-order-review-rating.star-rating
+										i.fa.fa-star.active-star
+										i.fa.fa-star.active-star
+										i.fa.fa-star.active-star
+										i.fa.fa-star
+										i.fa.fa-star
+								.cabinet-order-review-top-right
+									label Номер заказа
+									input(type="text").cabinet-order-review-number
+							
+							.cabinet-order-review-text
+									label Ваш отзыв
+									textarea(name="", rows="5")
+							.cabinet-order-review-footer
+								a(href="#").cabinet-order-review-but.button-block Отправить
+
+
+					.cabinet-tab-el#cabinet-tab-2.cabinet-tab-liked
+						.cabinet-tab-liked-wrap
+
+							.cabinet-tab-liked-left
+								.cabinet-tab-liked-left-title Действия с выбранными элементами
+								.cabinet-tab-liked-left-info выбранно  <span class="mark">3</span> элемента на сумму <span class="mark">1224 руб.</span>
+								.cabinet-tab-liked-left-but В корзину
+								.cabinet-tab-liked-left-but Удалить из списка избранного
+								.cabinet-tab-liked-left-but Поделиться в соц. сетях
+								.cabinet-tab-liked-left-soc
+									i.fa.fa-facebook
+									i.fa.fa-vk
+									i.fa.fa-twitter
+									i.fa.fa-google-plus
+									i.fa.fa-youtube
+									i.fa.fa-instagram
+
+							.cabinet-tab-liked-right
+								.cabinet-tab-liked-right-title Список избранного
+								
+								include ./block_html/pagination.jade
+								
+								.product-card-wraper
+									- for (var d = 0; d < 6; d++)
+										.product-card-el
+											.product-card-view
+												.product-card-get
+													.product-card-get-left
+														input(type="checkbox")
+														label Выбрать
+													.product-card-get-right
+														.fa.fa-times-circle
+												.product-card-img
+													img(src="img/product-1.jpg", alt="")
+												.product-card-name Кальян Ager 1251rg 74 см
+											a(href="#").product-card-review отзывы(12)
+											a(href="#").product-card-but
+												.product-card-price 3525 руб.
+												.product-card-getText в корзину
+
+								include ./block_html/pagination.jade
+								
+					.cabinet-tab-el#cabinet-tab-3.cabinet-tab-el-basket
+						.cabinet-tab-el-basket-left
+							.cabinet-tab-el-basket-left-title Оформление
+							.cabinet-tab-el-basket-left-check
+								.cabinet-tab-el-basket-left-check-el
+									input(type="checkbox")
+									label Забрать в магазине
+								.cabinet-tab-el-basket-left-check-el
+									input(type="checkbox")
+									label Оформить доставку по Москве 350 руб
+							.cabinet-tab-el-basket-left-itog
+								.cabinet-tab-el-basket-left-itog-row
+									.cabinet-tab-el-basket-left-itog-inf Всего товаров
+									.cabinet-tab-el-basket-left-itog-inf 8 шт
+								.cabinet-tab-el-basket-left-itog-row
+									.cabinet-tab-el-basket-left-itog-inf На общую сумму
+									.cabinet-tab-el-basket-left-itog-inf 12 000 руб
+								.cabinet-tab-el-basket-left-itog-row
+									.cabinet-tab-el-basket-left-itog-inf Доставка
+									.cabinet-tab-el-basket-left-itog-inf 350 руб
+							.cabinet-tab-el-basket-footer Итого к оплате
+							.cabinet-tab-el-basket-footer 12 350 руб.
+
+						.cabinet-tab-el-basket-right
+							.cabinet-tab-el-basket-right-title Список выбранного товара
+
+							table.cabinet-tab-el-basket
+								thead
+									tr
+										th Название
+										th Цена за единицу
+										th кол-во
+										th Стоимость
+								tbody
+									- for (var a = 0; a < 4; a++)
+										tr
+											td
+												.table-basket-row 
+													.table-basket-img
+														img(src="img/product-1.jpg", alt="")
+													.table-basket-inf Кальян Ager 1251 кп 74 см
+											td 
+												.table-basket-inf 1500 руб
+											td 
+												.table-basket-number
+													span.minus 
+														i.fa.fa-angle-left
+													input(type='text', value='0', size='1')
+													span.plus
+														i.fa.fa-angle-right
+											td 
+												.table-basket-row
+													.table-basket-inf 3000 руб
+													.fa.fa-times-circle
+							.cabinet-tab-basket-but
+								a(href="#").button-block Оформить покупку
+					
+					.cabinet-tab-el#cabinet-tab-4.cabinet-private
+						.cabinet-private-wraper
+							.cabinet-private-title Персональные данные
+							.cabinet-private-form
+								
+								.cabinet-private-form-row
+									.cabinet-private-form-label Адресс e-mail
+									.cabinet-private-form-row-input
+										input(type="text")
+								
+								.cabinet-private-form-row
+									.cabinet-private-form-label Фамилия 
+									.cabinet-private-form-row-input
+										input(type="text")
+								
+								.cabinet-private-form-row
+									.cabinet-private-form-label Имя
+									.cabinet-private-form-row-input
+										input(type="text")
+								
+								.cabinet-private-form-row.cabinet-private-form-row-phone
+									.cabinet-private-form-label Мобильный телефон
+									.cabinet-private-form-row-input
+										input(type="text")
+										input(type="text")
+
+								.cabinet-private-form-row
+									.cabinet-private-form-label Адрес доставки
+									.cabinet-private-form-row-input
+										input(type="text")
+
+								.cabinet-private-form-row.cabinet-private-form-row-time
+									.cabinet-private-form-label Время доставки
+									.cabinet-private-form-row-input
+										span c
+										select#(name="")
+											option 08:00
+											option 08:00
+											option 08:00
+										span до
+										select#(name="")
+											option 23:00
+											option 23:00
+											option 23:00
+
+								.cabinet-private-form-row.cabinet-private-form-row-check
+									.cabinet-private-form-label 
+									.cabinet-private-form-row-input
+										input(type="checkbox")
+										span Я хочу получать информацию об акциях, скидках, новинках, а также бесплатные советы и рекомендации от kalif24.ru
+
+								.cabinet-private-title Изменить пароль
+								
+								.cabinet-private-form-row
+									.cabinet-private-form-label Новый пароль
+									.cabinet-private-form-row-input
+										input(type="text")
+
+								.cabinet-private-form-row
+									.cabinet-private-form-label Повторить пароль
+									.cabinet-private-form-row-input
+										input(type="text")
+
+								.cabinet-private-form-row
+									.cabinet-private-form-label Подтвердить действующим паролем
+									.cabinet-private-form-row-input
+										input(type="text")
+
+
+ 
+
+	//Include footer
+	include ./block_html/footer.jade
+
+	//Include scripts
+	include ./block_html/script.jade

@@ -13,13 +13,62 @@ $(document).ready(function(){
 	$('.main-left-menu').easytree();
 
 
-   $('.menu-cat-product').click(function(){
+  $('.menu-cat-product').click(function(){
    	if ($(window).width() <= '480'){
 			$('.main-left-menu').slideToggle()
 		}
 	})
 
-	
+  var topToggleMenu = function(){
+	  $('.menu-cat-product-title').click(function(){
+	  	$('.first-lvl').toggleClass('show');
+	  })
+
+		$('.first-lvl > .menu-cat-product-next').click(function(){
+			$('.first-lvl').each(function(){
+				$('.second-lvl').removeClass('show')
+			})
+			$(this).next('.menu-cat-product-sub-el').find('.second-lvl').addClass('show')
+		})
+		$('.second-lvl > .menu-cat-product-next').click(function(){
+			$('.second-lvl').each(function(){
+				$('.three-lvl').removeClass('show')
+			})
+			$(this).next('.menu-cat-product-sub-el').find('.three-lvl').addClass('show')
+		})
+
+		 $(document).click(function (event) {
+	        if (
+	        		$(event.target).closest('.menu-cat-product').length == 0 && $(event.target).attr('class') != 'menu-cat-product'
+	             ) {
+	            $('.first-lvl').removeClass('show');
+	            $('.second-lvl').removeClass('show');
+	            $('.three-lvl').removeClass('show');
+	        }
+	    });
+	}
+
+	if ($(window).width() <= '1100' || $(window).width() > '680'){
+			topToggleMenu()
+		}
+
+	$('.minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 0 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+
+    });
+
+    $('.plus').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+
+    });
 	/* ###### init EasyDropDown style for selects  ######*/
 	/* ###### bower i easydropdown  ######*/
 	/*<select class="dropdown"> add class (dropdown)
@@ -100,14 +149,14 @@ $(document).ready(function(){
 
 	/* ###### init responsive-tabs  ######*/
 	/* ###### bower i responsive-tabs  ######*/
-/*    $('#horizontalTab').responsiveTabs({
-        rotate: false,
-        startCollapsed: 'accordion',
-        collapsible: 'accordion',
-        setHash: true,
-        active: 0
+ $('.cabinet-tab').responsiveTabs({
+        //rotate: false,
+        //startCollapsed: 'accordion',
+        //collapsible: 'accordion',
+        //setHash: true,
+        active: 3
         
-    });*/
+});
 
 	/* ###### init fancybox  ######*/
 	/* ###### bower i fancybox  ######*/

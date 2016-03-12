@@ -1,0 +1,43 @@
+//Footer
+.footer
+	.main-cont
+		.footer-wrap
+			.footer-head
+				.footer-head-el
+					img(src="img/footer-logo.png", alt="")
+				.footer-head-el
+					a(href="#") Кальяны
+					a(href="#") Элеткронные кальяны
+					a(href="#") Табак
+					a(href="#") Бестабачная продукция
+				.footer-head-el
+					a(href="#") Уголь
+					a(href="#") Горелки, плитки, газ
+					a(href="#") Комплектующие
+					a(href="#") Аксессуары
+				.footer-head-el
+					a(href="#") О нас
+					a(href="#") Доставка
+					a(href="#") Оплата
+					a(href="#") Контакты
+.footer-contact
+	.main-cont
+		.footer-contact-wraper
+			.footer-contact-info
+				.footer-contact-info-write Напишите нам
+				.footer-contact-info-phone #{phone}
+				.footer-contact-info-mail #{mail}
+				.footer-contact-info-pay 
+					- for (var x = 0; x < 5; x++)
+						img(src="img/icon-pay-#{x+1}.png", alt="")
+			.footer-contact-soc
+				.footer-contact-soc-left
+					i.fa.fa-facebook
+					i.fa.fa-vk
+					i.fa.fa-twitter
+					i.fa.fa-google-plus
+					i.fa.fa-youtube
+					i.fa.fa-instagram
+				.footer-contact-soc-right
+					- for (var y = 0; y < 7; y++)
+						img(src="img/icon-footer-#{y+1}.png", alt="")

@@ -5,7 +5,13 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Document</title>
-    <link rel="stylesheet" href="css/vendor.css">
+    <!--build:css css/vendor.css-->
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css"/>
+    <link rel="stylesheet" href="bower/components-font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.css"/>
+    <link rel="stylesheet" href="bower/responsive-tabs/css/responsive-tabs.css"/>
+    <link rel="stylesheet" href="css/ui.easytree.css"/>
+    <!--endbuild-->
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="http://webfonts.ru/import/opensans.css"/>
   </head>
@@ -397,284 +403,433 @@
   <!--Content-->
   <div class="main-cont">
     <div class="content">
-      <!--Left-content-->
-      <div class="main-left">
-        <!--Left-menu-->
-        <div class="main-left-menu">
+      <div class="cabinet-wrap">
+        <div class="part-title">Личный кабинет</div>
+        <div class="cabinet-tab"> 
           <ul>
-            <li>Кальяны
-              <ul>
-                <li><a href="#">Кальяны</a></li>
-                <li><a href="#">Элеткронные кальяны</a></li>
-                <li><a href="#">Табак</a></li>
-                <li><a href="#">Бестабачная продукция</a></li>
-                <li><a href="#">Уголь</a></li>
-                <li><a href="#">Горелки, плитки, газ</a></li>
-                <li><a href="#">Комплектующие</a></li>
-                <li><a href="#">Аксессуары</a></li>
-              </ul>
-            </li>
-            <li>Элеткронные кальяны
-              <ul>
-                <li><a href="#">Кальяны</a></li>
-                <li><a href="#">Элеткронные кальяны</a></li>
-                <li><a href="#">Табак</a></li>
-                <li><a href="#">Бестабачная продукция</a></li>
-                <li><a href="#">Уголь</a></li>
-                <li><a href="#">Горелки, плитки, газ</a></li>
-                <li><a href="#">Комплектующие</a></li>
-                <li><a href="#">Аксессуары</a></li>
-              </ul>
-            </li>
-            <li>Табак
-              <ul>
-                <li><a href="#">Кальяны</a></li>
-                <li><a href="#">Элеткронные кальяны</a></li>
-                <li><a href="#">Табак</a></li>
-                <li><a href="#">Бестабачная продукция</a></li>
-                <li><a href="#">Уголь</a></li>
-                <li><a href="#">Горелки, плитки, газ</a></li>
-                <li><a href="#">Комплектующие</a></li>
-                <li><a href="#">Аксессуары</a></li>
-              </ul>
-            </li>
-            <li>Бестабачная продукция
-              <ul>
-                <li><a href="#">Кальяны</a></li>
-                <li><a href="#">Элеткронные кальяны</a></li>
-                <li><a href="#">Табак</a></li>
-                <li><a href="#">Бестабачная продукция</a></li>
-                <li><a href="#">Уголь</a></li>
-                <li><a href="#">Горелки, плитки, газ</a></li>
-                <li><a href="#">Комплектующие</a></li>
-                <li><a href="#">Аксессуары</a></li>
-              </ul>
-            </li>
-            <li>Уголь
-              <ul>
-                <li><a href="#">Кальяны</a></li>
-                <li><a href="#">Элеткронные кальяны</a></li>
-                <li><a href="#">Табак</a></li>
-                <li><a href="#">Бестабачная продукция</a></li>
-                <li><a href="#">Уголь</a></li>
-                <li><a href="#">Горелки, плитки, газ</a></li>
-                <li><a href="#">Комплектующие</a></li>
-                <li><a href="#">Аксессуары</a></li>
-              </ul>
-            </li>
-            <li>Горелки, плитки, газ
-              <ul>
-                <li><a href="#">Кальяны</a></li>
-                <li><a href="#">Элеткронные кальяны</a></li>
-                <li><a href="#">Табак</a></li>
-                <li><a href="#">Бестабачная продукция</a></li>
-                <li><a href="#">Уголь</a></li>
-                <li><a href="#">Горелки, плитки, газ</a></li>
-                <li><a href="#">Комплектующие</a></li>
-                <li><a href="#">Аксессуары</a></li>
-              </ul>
-            </li>
-            <li>Комплектующие
-              <ul>
-                <li><a href="#">Кальяны</a></li>
-                <li><a href="#">Элеткронные кальяны</a></li>
-                <li><a href="#">Табак</a></li>
-                <li><a href="#">Бестабачная продукция</a></li>
-                <li><a href="#">Уголь</a></li>
-                <li><a href="#">Горелки, плитки, газ</a></li>
-                <li><a href="#">Комплектующие</a></li>
-                <li><a href="#">Аксессуары</a></li>
-              </ul>
-            </li>
-            <li>Аксессуары
-              <ul>
-                <li><a href="#">Кальяны</a></li>
-                <li><a href="#">Элеткронные кальяны</a></li>
-                <li><a href="#">Табак</a></li>
-                <li><a href="#">Бестабачная продукция</a></li>
-                <li><a href="#">Уголь</a></li>
-                <li><a href="#">Горелки, плитки, газ</a></li>
-                <li><a href="#">Комплектующие</a></li>
-                <li><a href="#">Аксессуары</a></li>
-              </ul>
-            </li>
+            <li> <a href="#cabinet-tab-1">Мои заказы</a></li>
+            <li> <a href="#cabinet-tab-2">Избранное</a></li>
+            <li> <a href="#cabinet-tab-3">Корзина</a></li>
+            <li> <a href="#cabinet-tab-4">Личные данные</a></li>
           </ul>
-        </div>
-        <!--Review-->
-        <div class="main-left-review-wrap">
-          <div class="title title-border">Отзывы </div>
-          <div class="main-left-review">
-            <div class="main-left-review-el">
-              <div class="main-left-review-el-top">
-                <div class="main-left-review-el-img"><img src="img/product-1.jpg" alt=""/></div>
-                <div class="main-left-review-el-info">
-                  <div class="main-left-review-title">Наименование товара</div>
-                  <div class="main-left-review-name">Сергей Попов</div>
-                  <div class="main-left-review-date">02.12.2014</div>
+          <div id="cabinet-tab-1" class="cabinet-tab-el cabinet-order">
+            <div class="cabinet-order-title">Мои заказы</div>
+            <table class="cabinet-order-table">
+              <thead>
+                <tr>
+                  <th>№ Заказа</th>
+                  <th>Статус</th>
+                  <th>Дата</th>
+                  <th>Способ доставки</th>
+                  <th>Стоимость</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                </tr>
+                <tr>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                </tr>
+                <tr>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                </tr>
+                <tr>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                  <td>Не присвоен</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="cabinet-order-review-pagination">
+              <div class="block-pagination">
+                <div class="block-pagination-wrap"><a href="#"><<</a><a href="#"><</a><a href="#">	1</a><a href="#" class="active-pagination">	2</a><a href="#">	3</a><a href="#">	4</a><a href="#">	5</a><a href="#">	...</a><a href="#">	9</a><a href="#">	></a><a href="#">	>></a></div>
+                <div class="block-pagination-all">
+                  <div class="block-pagination-all-top">Показать еще</div>
+                  <div class="block-pagination-all-val">Показано 1-5 из 20</div>
                 </div>
               </div>
-              <div class="main-left-review-el-bot"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolore ducimus totam quibusdam ad eligendi voluptates quod aliquid quaerat. Incidunt!ASDASD</div>
             </div>
-            <div class="main-left-review-el">
-              <div class="main-left-review-el-top">
-                <div class="main-left-review-el-img"><img src="img/product-1.jpg" alt=""/></div>
-                <div class="main-left-review-el-info">
-                  <div class="main-left-review-title">Наименование товара</div>
-                  <div class="main-left-review-name">Сергей Попов</div>
-                  <div class="main-left-review-date">02.12.2014</div>
+            <div class="cabinet-order-review">
+              <div class="cabinet-order-review-title">Написать отзыв о работе магазина</div>
+              <div class="cabinet-order-review-top">
+                <div class="cabinet-order-review-top-left">
+                  <label>Оценка</label>
+                  <div class="cabinet-order-review-rating star-rating"><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                </div>
+                <div class="cabinet-order-review-top-right">
+                  <label>Номер заказа</label>
+                  <input type="text" class="cabinet-order-review-number"/>
                 </div>
               </div>
-              <div class="main-left-review-el-bot"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolore ducimus totam quibusdam ad eligendi voluptates quod aliquid quaerat. Incidunt!ASDASD</div>
+              <div class="cabinet-order-review-text">
+                <label>Ваш отзыв</label>
+                <textarea name="" rows="5"></textarea>
+              </div>
+              <div class="cabinet-order-review-footer"><a href="#" class="cabinet-order-review-but button-block">Отправить</a></div>
             </div>
-            <div class="main-left-review-el">
-              <div class="main-left-review-el-top">
-                <div class="main-left-review-el-img"><img src="img/product-1.jpg" alt=""/></div>
-                <div class="main-left-review-el-info">
-                  <div class="main-left-review-title">Наименование товара</div>
-                  <div class="main-left-review-name">Сергей Попов</div>
-                  <div class="main-left-review-date">02.12.2014</div>
+          </div>
+          <div id="cabinet-tab-2" class="cabinet-tab-el cabinet-tab-liked">
+            <div class="cabinet-tab-liked-wrap">
+              <div class="cabinet-tab-liked-left">
+                <div class="cabinet-tab-liked-left-title">Действия с выбранными элементами</div>
+                <div class="cabinet-tab-liked-left-info">выбранно  <span class="mark">3</span> элемента на сумму <span class="mark">1224 руб.</span></div>
+                <div class="cabinet-tab-liked-left-but">В корзину</div>
+                <div class="cabinet-tab-liked-left-but">Удалить из списка избранного</div>
+                <div class="cabinet-tab-liked-left-but">Поделиться в соц. сетях</div>
+                <div class="cabinet-tab-liked-left-soc"><i class="fa fa-facebook"></i><i class="fa fa-vk"></i><i class="fa fa-twitter"></i><i class="fa fa-google-plus"></i><i class="fa fa-youtube"></i><i class="fa fa-instagram"></i></div>
+              </div>
+              <div class="cabinet-tab-liked-right">
+                <div class="cabinet-tab-liked-right-title">Список избранного</div>
+                <div class="block-pagination">
+                  <div class="block-pagination-wrap"><a href="#"><<</a><a href="#"><</a><a href="#">	1</a><a href="#" class="active-pagination">	2</a><a href="#">	3</a><a href="#">	4</a><a href="#">	5</a><a href="#">	...</a><a href="#">	9</a><a href="#">	></a><a href="#">	>></a></div>
+                  <div class="block-pagination-all">
+                    <div class="block-pagination-all-top">Показать еще</div>
+                    <div class="block-pagination-all-val">Показано 1-5 из 20</div>
+                  </div>
+                </div>
+                <div class="product-card-wraper">
+                  <div class="product-card-el">
+                    <div class="product-card-view">
+                      <div class="product-card-get">
+                        <div class="product-card-get-left">
+                          <input type="checkbox"/>
+                          <label>Выбрать</label>
+                        </div>
+                        <div class="product-card-get-right">
+                          <div class="fa fa-times-circle"></div>
+                        </div>
+                      </div>
+                      <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
+                      <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
+                    </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
+                      <div class="product-card-price">3525 руб.</div>
+                      <div class="product-card-getText">в корзину</div></a>
+                  </div>
+                  <div class="product-card-el">
+                    <div class="product-card-view">
+                      <div class="product-card-get">
+                        <div class="product-card-get-left">
+                          <input type="checkbox"/>
+                          <label>Выбрать</label>
+                        </div>
+                        <div class="product-card-get-right">
+                          <div class="fa fa-times-circle"></div>
+                        </div>
+                      </div>
+                      <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
+                      <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
+                    </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
+                      <div class="product-card-price">3525 руб.</div>
+                      <div class="product-card-getText">в корзину</div></a>
+                  </div>
+                  <div class="product-card-el">
+                    <div class="product-card-view">
+                      <div class="product-card-get">
+                        <div class="product-card-get-left">
+                          <input type="checkbox"/>
+                          <label>Выбрать</label>
+                        </div>
+                        <div class="product-card-get-right">
+                          <div class="fa fa-times-circle"></div>
+                        </div>
+                      </div>
+                      <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
+                      <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
+                    </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
+                      <div class="product-card-price">3525 руб.</div>
+                      <div class="product-card-getText">в корзину</div></a>
+                  </div>
+                  <div class="product-card-el">
+                    <div class="product-card-view">
+                      <div class="product-card-get">
+                        <div class="product-card-get-left">
+                          <input type="checkbox"/>
+                          <label>Выбрать</label>
+                        </div>
+                        <div class="product-card-get-right">
+                          <div class="fa fa-times-circle"></div>
+                        </div>
+                      </div>
+                      <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
+                      <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
+                    </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
+                      <div class="product-card-price">3525 руб.</div>
+                      <div class="product-card-getText">в корзину</div></a>
+                  </div>
+                  <div class="product-card-el">
+                    <div class="product-card-view">
+                      <div class="product-card-get">
+                        <div class="product-card-get-left">
+                          <input type="checkbox"/>
+                          <label>Выбрать</label>
+                        </div>
+                        <div class="product-card-get-right">
+                          <div class="fa fa-times-circle"></div>
+                        </div>
+                      </div>
+                      <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
+                      <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
+                    </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
+                      <div class="product-card-price">3525 руб.</div>
+                      <div class="product-card-getText">в корзину</div></a>
+                  </div>
+                  <div class="product-card-el">
+                    <div class="product-card-view">
+                      <div class="product-card-get">
+                        <div class="product-card-get-left">
+                          <input type="checkbox"/>
+                          <label>Выбрать</label>
+                        </div>
+                        <div class="product-card-get-right">
+                          <div class="fa fa-times-circle"></div>
+                        </div>
+                      </div>
+                      <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
+                      <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
+                    </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
+                      <div class="product-card-price">3525 руб.</div>
+                      <div class="product-card-getText">в корзину</div></a>
+                  </div>
+                </div>
+                <div class="block-pagination">
+                  <div class="block-pagination-wrap"><a href="#"><<</a><a href="#"><</a><a href="#">	1</a><a href="#" class="active-pagination">	2</a><a href="#">	3</a><a href="#">	4</a><a href="#">	5</a><a href="#">	...</a><a href="#">	9</a><a href="#">	></a><a href="#">	>></a></div>
+                  <div class="block-pagination-all">
+                    <div class="block-pagination-all-top">Показать еще</div>
+                    <div class="block-pagination-all-val">Показано 1-5 из 20</div>
+                  </div>
                 </div>
               </div>
-              <div class="main-left-review-el-bot"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolore ducimus totam quibusdam ad eligendi voluptates quod aliquid quaerat. Incidunt!ASDASD</div>
+            </div>
+          </div>
+          <div id="cabinet-tab-3" class="cabinet-tab-el cabinet-tab-el-basket">
+            <div class="cabinet-tab-el-basket-left">
+              <div class="cabinet-tab-el-basket-left-title">Оформление</div>
+              <div class="cabinet-tab-el-basket-left-check">
+                <div class="cabinet-tab-el-basket-left-check-el">
+                  <input type="checkbox"/>
+                  <label>Забрать в магазине</label>
+                </div>
+                <div class="cabinet-tab-el-basket-left-check-el">
+                  <input type="checkbox"/>
+                  <label>Оформить доставку по Москве 350 руб</label>
+                </div>
+              </div>
+              <div class="cabinet-tab-el-basket-left-itog">
+                <div class="cabinet-tab-el-basket-left-itog-row">
+                  <div class="cabinet-tab-el-basket-left-itog-inf">Всего товаров</div>
+                  <div class="cabinet-tab-el-basket-left-itog-inf">8 шт</div>
+                </div>
+                <div class="cabinet-tab-el-basket-left-itog-row">
+                  <div class="cabinet-tab-el-basket-left-itog-inf">На общую сумму</div>
+                  <div class="cabinet-tab-el-basket-left-itog-inf">12 000 руб</div>
+                </div>
+                <div class="cabinet-tab-el-basket-left-itog-row">
+                  <div class="cabinet-tab-el-basket-left-itog-inf">Доставка</div>
+                  <div class="cabinet-tab-el-basket-left-itog-inf">350 руб</div>
+                </div>
+              </div>
+              <div class="cabinet-tab-el-basket-footer">Итого к оплате</div>
+              <div class="cabinet-tab-el-basket-footer">12 350 руб.</div>
+            </div>
+            <div class="cabinet-tab-el-basket-right">
+              <div class="cabinet-tab-el-basket-right-title">Список выбранного товара</div>
+              <table class="cabinet-tab-el-basket">
+                <thead>
+                  <tr>
+                    <th>Название</th>
+                    <th>Цена за единицу</th>
+                    <th>кол-во</th>
+                    <th>Стоимость</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="table-basket-row"> 
+                        <div class="table-basket-img"><img src="img/product-1.jpg" alt=""/></div>
+                        <div class="table-basket-inf">Кальян Ager 1251 кп 74 см</div>
+                      </div>
+                    </td>
+                    <td> 
+                      <div class="table-basket-inf">1500 руб</div>
+                    </td>
+                    <td> 
+                      <div class="table-basket-number"><span class="minus"> <i class="fa fa-angle-left"></i></span>
+                        <input type="text" value="0" size="1"/><span class="plus"><i class="fa fa-angle-right"></i></span>
+                      </div>
+                    </td>
+                    <td> 
+                      <div class="table-basket-row">
+                        <div class="table-basket-inf">3000 руб</div>
+                        <div class="fa fa-times-circle"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="table-basket-row"> 
+                        <div class="table-basket-img"><img src="img/product-1.jpg" alt=""/></div>
+                        <div class="table-basket-inf">Кальян Ager 1251 кп 74 см</div>
+                      </div>
+                    </td>
+                    <td> 
+                      <div class="table-basket-inf">1500 руб</div>
+                    </td>
+                    <td> 
+                      <div class="table-basket-number"><span class="minus"> <i class="fa fa-angle-left"></i></span>
+                        <input type="text" value="0" size="1"/><span class="plus"><i class="fa fa-angle-right"></i></span>
+                      </div>
+                    </td>
+                    <td> 
+                      <div class="table-basket-row">
+                        <div class="table-basket-inf">3000 руб</div>
+                        <div class="fa fa-times-circle"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="table-basket-row"> 
+                        <div class="table-basket-img"><img src="img/product-1.jpg" alt=""/></div>
+                        <div class="table-basket-inf">Кальян Ager 1251 кп 74 см</div>
+                      </div>
+                    </td>
+                    <td> 
+                      <div class="table-basket-inf">1500 руб</div>
+                    </td>
+                    <td> 
+                      <div class="table-basket-number"><span class="minus"> <i class="fa fa-angle-left"></i></span>
+                        <input type="text" value="0" size="1"/><span class="plus"><i class="fa fa-angle-right"></i></span>
+                      </div>
+                    </td>
+                    <td> 
+                      <div class="table-basket-row">
+                        <div class="table-basket-inf">3000 руб</div>
+                        <div class="fa fa-times-circle"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="table-basket-row"> 
+                        <div class="table-basket-img"><img src="img/product-1.jpg" alt=""/></div>
+                        <div class="table-basket-inf">Кальян Ager 1251 кп 74 см</div>
+                      </div>
+                    </td>
+                    <td> 
+                      <div class="table-basket-inf">1500 руб</div>
+                    </td>
+                    <td> 
+                      <div class="table-basket-number"><span class="minus"> <i class="fa fa-angle-left"></i></span>
+                        <input type="text" value="0" size="1"/><span class="plus"><i class="fa fa-angle-right"></i></span>
+                      </div>
+                    </td>
+                    <td> 
+                      <div class="table-basket-row">
+                        <div class="table-basket-inf">3000 руб</div>
+                        <div class="fa fa-times-circle"></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="cabinet-tab-basket-but"><a href="#" class="button-block">Оформить покупку</a></div>
+            </div>
+          </div>
+          <div id="cabinet-tab-4" class="cabinet-tab-el cabinet-private">
+            <div class="cabinet-private-wraper">
+              <div class="cabinet-private-title">Персональные данные</div>
+              <div class="cabinet-private-form">
+                <div class="cabinet-private-form-row">
+                  <div class="cabinet-private-form-label">Адресс e-mail</div>
+                  <div class="cabinet-private-form-row-input">
+                    <input type="text"/>
+                  </div>
+                </div>
+                <div class="cabinet-private-form-row">
+                  <div class="cabinet-private-form-label">Фамилия </div>
+                  <div class="cabinet-private-form-row-input">
+                    <input type="text"/>
+                  </div>
+                </div>
+                <div class="cabinet-private-form-row">
+                  <div class="cabinet-private-form-label">Имя</div>
+                  <div class="cabinet-private-form-row-input">
+                    <input type="text"/>
+                  </div>
+                </div>
+                <div class="cabinet-private-form-row cabinet-private-form-row-phone">
+                  <div class="cabinet-private-form-label">Мобильный телефон</div>
+                  <div class="cabinet-private-form-row-input">
+                    <input type="text"/>
+                    <input type="text"/>
+                  </div>
+                </div>
+                <div class="cabinet-private-form-row">
+                  <div class="cabinet-private-form-label">Адрес доставки</div>
+                  <div class="cabinet-private-form-row-input">
+                    <input type="text"/>
+                  </div>
+                </div>
+                <div class="cabinet-private-form-row cabinet-private-form-row-time">
+                  <div class="cabinet-private-form-label">Время доставки</div>
+                  <div class="cabinet-private-form-row-input"><span>c</span>
+                    <select>#(name="")
+                      <option>08:00</option>
+                      <option>08:00</option>
+                      <option>08:00</option>
+                    </select><span>до</span>
+                    <select>#(name="")
+                      <option>23:00</option>
+                      <option>23:00</option>
+                      <option>23:00</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="cabinet-private-form-row cabinet-private-form-row-check">
+                  <div class="cabinet-private-form-label"> </div>
+                  <div class="cabinet-private-form-row-input">
+                    <input type="checkbox"/><span>Я хочу получать информацию об акциях, скидках, новинках, а также бесплатные советы и рекомендации от kalif24.ru</span>
+                  </div>
+                </div>
+                <div class="cabinet-private-title">Изменить пароль</div>
+                <div class="cabinet-private-form-row">
+                  <div class="cabinet-private-form-label">Новый пароль</div>
+                  <div class="cabinet-private-form-row-input">
+                    <input type="text"/>
+                  </div>
+                </div>
+                <div class="cabinet-private-form-row">
+                  <div class="cabinet-private-form-label">Повторить пароль</div>
+                  <div class="cabinet-private-form-row-input">
+                    <input type="text"/>
+                  </div>
+                </div>
+                <div class="cabinet-private-form-row">
+                  <div class="cabinet-private-form-label">Подтвердить действующим паролем</div>
+                  <div class="cabinet-private-form-row-input">
+                    <input type="text"/>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!--Right-content-->
-      <div class="main-right">
-        <div class="main-right-slider owl-carousel"><img src="img/slider-1.png" alt=""/><img src="img/slider-1.png" alt=""/><img src="img/slider-1.png" alt=""/></div>
-        <div class="main-adv">
-          <div class="main-adv-el">
-            <div class="main-adv-el-img"><img src="img/icon-service.jpg" alt=""/></div>
-            <div class="main-adv-el-text">Сервис</div>
-          </div>
-          <div class="main-adv-el">
-            <div class="main-adv-el-img"><img src="img/icon-quality.jpg" alt=""/></div>
-            <div class="main-adv-el-text">Качетсво</div>
-          </div>
-          <div class="main-adv-el">
-            <div class="main-adv-el-img"><img src="img/icon-lowpay.jpg" alt=""/></div>
-            <div class="main-adv-el-text">Низкие цены</div>
-          </div>
-        </div>
-        <div class="title title-border">Наши лучшие товары</div>
-        <div class="product-card-wraper">
-          <div class="product-card-el">
-            <div class="product-card-view">
-              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
-              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
-              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
-            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
-              <div class="product-card-price">3525 руб.</div>
-              <div class="product-card-getText">в корзину</div></a>
-          </div>
-          <div class="product-card-el">
-            <div class="product-card-view">
-              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
-              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
-              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
-            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
-              <div class="product-card-price">3525 руб.</div>
-              <div class="product-card-getText">в корзину</div></a>
-          </div>
-          <div class="product-card-el">
-            <div class="product-card-view">
-              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
-              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
-              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
-            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
-              <div class="product-card-price">3525 руб.</div>
-              <div class="product-card-getText">в корзину</div></a>
-          </div>
-          <div class="product-card-el">
-            <div class="product-card-view">
-              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
-              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
-              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
-            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
-              <div class="product-card-price">3525 руб.</div>
-              <div class="product-card-getText">в корзину</div></a>
-          </div>
-          <div class="product-card-el">
-            <div class="product-card-view">
-              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
-              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
-              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
-            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
-              <div class="product-card-price">3525 руб.</div>
-              <div class="product-card-getText">в корзину</div></a>
-          </div>
-          <div class="product-card-el">
-            <div class="product-card-view">
-              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
-              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
-              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
-            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
-              <div class="product-card-price">3525 руб.</div>
-              <div class="product-card-getText">в корзину</div></a>
-          </div>
-        </div>
-        <div class="title title-border">Рекомендуемые товары</div>
-        <div class="product-card-wraper">
-          <div class="product-card-el">
-            <div class="product-card-view">
-              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
-              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
-              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
-            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
-              <div class="product-card-price">3525 руб.</div>
-              <div class="product-card-getText">в корзину</div></a>
-          </div>
-          <div class="product-card-el">
-            <div class="product-card-view">
-              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
-              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
-              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
-            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
-              <div class="product-card-price">3525 руб.</div>
-              <div class="product-card-getText">в корзину</div></a>
-          </div>
-          <div class="product-card-el">
-            <div class="product-card-view">
-              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
-              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
-              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
-            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
-              <div class="product-card-price">3525 руб.</div>
-              <div class="product-card-getText">в корзину</div></a>
-          </div>
-          <div class="product-card-el">
-            <div class="product-card-view">
-              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
-              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
-              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
-            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
-              <div class="product-card-price">3525 руб.</div>
-              <div class="product-card-getText">в корзину</div></a>
-          </div>
-          <div class="product-card-el">
-            <div class="product-card-view">
-              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
-              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
-              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
-            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
-              <div class="product-card-price">3525 руб.</div>
-              <div class="product-card-getText">в корзину</div></a>
-          </div>
-          <div class="product-card-el">
-            <div class="product-card-view">
-              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
-              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
-              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
-            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
-              <div class="product-card-price">3525 руб.</div>
-              <div class="product-card-getText">в корзину</div></a>
-          </div>
-        </div>
-        <div class="title title-border">Интернет магазин KALIF24.RU</div>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ex velit, repellendus iure tenetur voluptate. Aperiam nostrum qui commodi omnis, ipsa laboriosam delectus atque aliquam necessitatibus, ullam cupiditate maiores quos dolore voluptatum. Animi quos, ducimus, reprehenderit a vel distinctio inventore?</p>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ex velit, repellendus iure tenetur voluptate. Aperiam nostrum qui commodi omnis, ipsa laboriosam delectus atque aliquam necessitatibus, ullam cupiditate maiores quos dolore voluptatum. Animi quos, ducimus, reprehenderit a vel distinctio inventore?</p>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis at voluptas eum, eligendi unde ad commodi nostrum soluta, sint tenetur earum perferendis quam eos quibusdam? Delectus ab nam molestias doloremque!20</p>
       </div>
     </div>
   </div>
@@ -711,6 +866,11 @@
     </div>
   </div>
   <!--Include scripts-->
-  <script src="js/combined.js"></script>
+  <!--build:js js/combined.js-->
+  <script src="bower/jquery/dist/jquery.js"></script>
+  <script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="bower/responsive-tabs/js/jquery.responsiveTabs.min.js"></script>
+  <script src="js/jquery.easytree.min.js"></script>
+  <!-- endbuild-->
   <script src="js/script.js"></script>
 </body>
