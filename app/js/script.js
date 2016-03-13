@@ -154,7 +154,8 @@ $(document).ready(function(){
         //startCollapsed: 'accordion',
         //collapsible: 'accordion',
         //setHash: true,
-        active: 3
+        active: 0,
+        scrollToAccordion: true
         
 });
 

@@ -4,10 +4,9 @@ html(lang="en")
 	include ./block_html/head.jade
 	include ./block_html/const.jade
 body
-	
+		
 	//Include Header
 	include ./block_html/header.jade
-	
 	//Content
 	.main-cont
 		.content
@@ -24,6 +23,7 @@ body
 							a(href="#cabinet-tab-3") Корзина
 						li 
 							a(href="#cabinet-tab-4") Личные данные
+
 					.cabinet-tab-el#cabinet-tab-1.cabinet-order
 						.cabinet-order-title Мои заказы
 						table.cabinet-order-table
@@ -45,7 +45,7 @@ body
 						.cabinet-order-review-pagination
 							include ./block_html/pagination.jade
 							
-
+	
 						.cabinet-order-review
 							.cabinet-order-review-title Написать отзыв о работе магазина
 							.cabinet-order-review-top
@@ -202,12 +202,12 @@ body
 									.cabinet-private-form-label Время доставки
 									.cabinet-private-form-row-input
 										span c
-										select#(name="")
+										select(name="")
 											option 08:00
 											option 08:00
 											option 08:00
 										span до
-										select#(name="")
+										select(name="")
 											option 23:00
 											option 23:00
 											option 23:00
@@ -234,9 +234,10 @@ body
 									.cabinet-private-form-label Подтвердить действующим паролем
 									.cabinet-private-form-row-input
 										input(type="text")
+							.cabinet-tab-basket-but
+								a(href="#").button-block Сохранить
 
 
- 
 
 	//Include footer
 	include ./block_html/footer.jade

@@ -972,10 +972,21 @@ textarea {
 .footer-contact-soc-right img {
   margin-left: 10px;
 }
+@media only screen and (max-width: 768px) {
+  .main-left-menu {
+    display: none !important;
+  }
+}
 @media only screen and (max-width: 480px) {
   .main-left-menu {
     margin-top: -10px;
     display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .menu-cat-product-title {
+    width: 100%;
+    text-align: center;
   }
 }
 .menu-cat-product-title span {
@@ -985,6 +996,12 @@ textarea {
   text-transform: uppercase;
   color: #2a4457;
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .menu-cat-product-title span {
+    width: 100%;
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 480px) {
   .menu-cat-product-title span {
@@ -1003,7 +1020,7 @@ textarea {
   left: 15px;
   margin-top: -8px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .menu-cat-product-title .fa-bars {
     display: block;
     left: 5px;
@@ -1069,11 +1086,6 @@ textarea {
   width: 100%;
   z-index: 2000;
 }
-@media only screen and (max-width: 760px) {
-  .menu-cat-product-sub {
-    display: none !important;
-  }
-}
 .menu-cat-product-sub a {
   color: #2a4457;
   padding: 10px;
@@ -1107,6 +1119,17 @@ textarea {
   position: absolute;
   top: 0px;
   width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .menu-cat-product-sub > .menu-cat-product-sub-el .menu-cat-product-sub-el {
+    position: initial;
+  }
+  .menu-cat-product-sub > .menu-cat-product-sub-el .menu-cat-product-sub-el .second-lvl {
+    background: #e6ebee;
+  }
+  .menu-cat-product-sub > .menu-cat-product-sub-el .menu-cat-product-sub-el .three-lvl {
+    background: #b1c8d6;
+  }
 }
 .menu-cat-product-sub-el {
   background: #f9f9f9;
@@ -1892,7 +1915,7 @@ ul.easytree-container ul {
       -ms-flex-align: center;
           align-items: center;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   .cabinet-tab-liked-left-soc {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2005,6 +2028,12 @@ ul.easytree-container ul {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   margin-bottom: 10px;
+}
+@media only screen and (max-width: 680px) {
+  .cabinet-tab-liked-left-info {
+    width: 100%;
+    font-size: 10px;
+  }
 }
 .cabinet-tab-liked-left-info .mark {
   color: #83c4db;
@@ -2529,4 +2558,7 @@ ul.easytree-container ul {
   .r-tabs .r-tabs-panel {
     padding: 20px 0 !important;
   }
+}
+.hiden {
+  display: none;
 }
