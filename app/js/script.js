@@ -69,6 +69,19 @@ $(document).ready(function(){
         return false;
 
     });
+
+   if ($(window).width() <= '1100'){
+   		$('.menu-cat-want').click(function(){
+   			$('.menu-cat-want-text-wrap').toggleClass('show');
+   		})
+			 $(document).click(function (event) {
+		        if (
+		        		$(event.target).closest('.menu-cat-want').length == 0 && $(event.target).attr('class') != 'menu-cat-want-text-wrap'
+		             ) {
+		            $('.menu-cat-want-text-wrap').removeClass('show');
+		        }
+		    });
+   	}
 	/* ###### init EasyDropDown style for selects  ######*/
 	/* ###### bower i easydropdown  ######*/
 	/*<select class="dropdown"> add class (dropdown)
@@ -158,6 +171,15 @@ $(document).ready(function(){
         scrollToAccordion: true
         
 });
+$('.about-tab').responsiveTabs({
+         //rotate: false,
+         //startCollapsed: 'accordion',
+         //collapsible: 'accordion',
+         //setHash: true,
+         active: 0,
+         scrollToAccordion: true
+         
+ });
 
 	/* ###### init fancybox  ######*/
 	/* ###### bower i fancybox  ######*/

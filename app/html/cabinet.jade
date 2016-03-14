@@ -13,7 +13,9 @@ body
 			.cabinet-wrap
 				.part-title Личный кабинет
 				
+				//Cabinet main cont
 				.cabinet-tab 
+					//Cabinet selector
 					ul
 						li 
 							a(href="#cabinet-tab-1") Мои заказы
@@ -24,6 +26,7 @@ body
 						li 
 							a(href="#cabinet-tab-4") Личные данные
 
+					//cabinet tab-el
 					.cabinet-tab-el#cabinet-tab-1.cabinet-order
 						.cabinet-order-title Мои заказы
 						table.cabinet-order-table
@@ -67,7 +70,7 @@ body
 							.cabinet-order-review-footer
 								a(href="#").cabinet-order-review-but.button-block Отправить
 
-
+					//cabinet tab-el
 					.cabinet-tab-el#cabinet-tab-2.cabinet-tab-liked
 						.cabinet-tab-liked-wrap
 
@@ -109,7 +112,8 @@ body
 												.product-card-getText в корзину
 
 								include ./block_html/pagination.jade
-								
+					
+					//cabinet tab-el
 					.cabinet-tab-el#cabinet-tab-3.cabinet-tab-el-basket
 						.cabinet-tab-el-basket-left
 							.cabinet-tab-el-basket-left-title Оформление
@@ -167,6 +171,7 @@ body
 							.cabinet-tab-basket-but
 								a(href="#").button-block Оформить покупку
 					
+					//cabinet tab-el
 					.cabinet-tab-el#cabinet-tab-4.cabinet-private
 						.cabinet-private-wraper
 							.cabinet-private-title Персональные данные

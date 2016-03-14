@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+html(lang="en")
+	//Include header
+	include ./block_html/head.jade
+	include ./block_html/const.jade
+body
+		
+	//Include Header
+	include ./block_html/header.jade
+	//Content
+	.main-cont
+		.content
+			.registration-wrap
+				.part-title Регистрация
+				.registration-private-wraper
+					.registration-private-title Персональные данные
+					.registration-private-form
+						mixin formRow(name)
+							.registration-private-form-row
+								.registration-private-form-label #{name}
+								.registration-private-form-row-input
+									input(type="text")
+
+						+formRow(' Адрес e-mail ')
+						+formRow(' Пароль ')
+						+formRow(' Подтверждение пароля ')
+						
+						.registration-private-form-row.registration-private-form-row-pol
+							.registration-private-form-label Обращение
+							.registration-private-form-row-input
+								.registration-private-form-row-input-el
+									div
+										input(type="checkbox") 
+									label Уважаемая
+								.registration-private-form-row-input-el
+									div
+										input(type="checkbox") 
+									label Уважаемый
+						
+						+formRow(' Фамилия ')
+						+formRow(' Имя ')
+						
+						.registration-private-form-row.registration-private-form-row-phone
+							.registration-private-form-label Мобильный телефон
+							.registration-private-form-row-input
+								input(type="text")
+								input(type="text")
+
+						.registration-private-form-row
+							.registration-private-form-label Адрес доставки
+							.registration-private-form-row-input
+								input(type="text")
+
+						.registration-private-form-row.registration-private-form-row-time
+							.registration-private-form-label Время доставки
+							.registration-private-form-row-input
+								span c
+								select(name="")
+									option 08:00
+									option 08:00
+									option 08:00
+								span до
+								select(name="")
+									option 23:00
+									option 23:00
+									option 23:00
+
+						.registration-private-form-row.registration-private-form-row-check
+							.registration-private-form-label 
+							.registration-private-form-row-input
+								input(type="checkbox")
+								span Я хочу получать информацию об акциях, скидках, новинках, а также бесплатные советы и рекомендации от kalif24.ru
+
+						.registration-private-form-row.registration-private-form-row-check
+							.registration-private-form-label 
+							.registration-private-form-row-input
+								input(type="checkbox")
+								span Регистрируясь на сайте kalif24.ru Вы подтверждаете согласие с правилами обработки своих персональных данных.
+						
+					.cabinet-tab-basket-but
+						a(href="#").button-block Зарегистрироваться
+
+	//Include footer
+	include ./block_html/footer.jade
+
+	//Include scripts
+	include ./block_html/script.jade

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+html(lang="en")
+	//Include header
+	include ./block_html/head.jade
+	include ./block_html/const.jade
+body
+		
+	//Include Header
+	include ./block_html/header.jade
+	//Content
+	.main-cont
+		.content
+			.newsFull-wrap
+				.part-title Новости
+				.newsFull-title
+					.newsFull-title-left Как выбрать табак для кальяна
+					.newsFull-title-right 15 декабря 2015
+				.newsFull-content
+					- for (var a = 0; a < 2; a++)
+						.newsFull-content-part
+							.newsFull-content-part-img
+								img(src="img/news-1.jpg", alt="")
+							.newsFull-content-part-text
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum praesentium autem, ipsam ducimus dicta sint. Impedit dolore ipsum eveniet tempora obcaecati ullam cupiditate totam ea quam dolor, tenetur ut eum nam magnam amet fuga adipisci, ab, nesciunt pariatur commodi.
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum praesentium autem, ipsam ducimus dicta sint. Impedit dolore ipsum eveniet tempora obcaecati ullam cupiditate totam ea quam dolor, tenetur ut eum nam magnam amet fuga adipisci, ab, nesciunt pariatur commodi.
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum praesentium autem, ipsam ducimus dicta sint. Impedit dolore ipsum eveniet tempora obcaecati ullam cupiditate totam ea quam dolor, tenetur ut eum nam magnam amet fuga adipisci, ab, nesciunt pariatur commodi.
+
+				
+				.newsFull-content-bot
+					.newsFull-content-bot-title
+						span.bold Теги:
+						.newsFull-content-teg Табак 
+						.newsFull-content-teg Кальян
+					.newsFull-content-bot-soc
+						.cabinet-tab-liked-left-soc
+							i.fa.fa-facebook
+							i.fa.fa-vk
+							i.fa.fa-twitter
+							i.fa.fa-google-plus
+							i.fa.fa-youtube
+							i.fa.fa-instagram
+				.newsFull-comments
+					.part-title Комментарии
+					.about-review-wraper
+						- for (var b = 0; b < 3; b++)
+							.about-review-el
+								.about-review-el-img
+									img(src="img/avatar.jpg", alt="")
+								.about-review-el-info
+									.about-review-el-info-name Галина Ивановна
+									.about-review-el-info-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi minus velit quas, cumque officiis earum laboriosam ipsum nesciunt repudiandae labore totam maiores sequi rerum, officia, veritatis voluptas asperiores animi! Praesentium mollitia aut reprehenderit recusandae cupiditate. Sapiente dicta ipsa totam voluptatem!
+									.about-review-el-info-bottom
+										a(href="#").about-review-el-info-answer Ответить
+										.about-review-el-info-like
+											i.fa.fa-heart
+	//Include footer
+	include ./block_html/footer.jade
+
+	//Include scripts
+	include ./block_html/script.jade

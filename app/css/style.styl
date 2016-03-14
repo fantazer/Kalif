@@ -216,6 +216,9 @@ input,textarea
 	background yellow
 	position relative
 .menu-cat-want
+	position relative
+	&:hover
+		cursor pointer
 	+below(760px)
 		order 3
 		width 50%
@@ -1212,3 +1215,824 @@ ul.easytree-container ul
 
 .hiden
 	display none
+	
+.about-tab
+	.r-tabs-nav
+		padding 10px
+		flex(between)
+		background #F8F8F8
+		margin-bottom 20px
+	li.r-tabs-state-active
+		background #83C4DB
+		a
+			color white
+	.r-tabs-tab
+		padding 10px 0
+		width 100%
+	.r-tabs-nav
+		a
+			color #898989
+			font-family Arial
+			font-size 20px
+			font-weight 400
+			text-align center
+			width 100%
+			display inline-block
+	+below(768px)
+		ul.r-tabs-nav
+			display none
+
+.about-order-title
+	color #364657
+	font-family Arial
+	font-size 18px
+	font-weight 700
+	line-height 16px
+	text-transform uppercase
+	margin 10px
+	margin-bottom 20px
+	
+//.cabinet-tab-el
+.about-info-wraper
+	display flex
+	flex-wrap wrap
+.about-info-left
+	+below(768px)
+		width 100%
+		flex-flow row
+		flex(around)
+	width 20%
+	flex(mid)
+	flex-flow column
+	justify-content flex-start
+.about-info-left-el
+	margin-bottom 30px
+	+below(480px)
+		width 30%
+		img
+			width 70%
+			margin 10px auto
+	flex(mid)
+	flex-flow column
+.about-info-left-el-img
+	margin-bottom 10px
+.about-info-left-el-text
+	+below(480px)
+		font-size 10px
+	color #364657
+	font-family Arial
+	font-size 14px
+	font-weight 700
+	line-height 16px
+	text-transform uppercase
+.about-info-right
+	+below(768px)
+		width 100%
+	width 80%
+//.about-order-title
+.about-info-right
+	p
+		color #364657
+		font-family Arial
+		font-size 15px
+		font-weight 400
+
+.about-info-right-img
+	+below(768px)
+		width 100%
+		flex(mid)
+		img
+			width 85%
+	cf()
+	float right
+	margin-bottom 20px
+	margin-left 20px
+	
+//.about-tab-delivery-wraper
+//.about-order-title
+.about-tab-delivery-inf
+	display flex
+	margin-bottom 30px
+.about-tab-delivery-left
+	+below(768px)
+		width 100%
+	width 55%
+	li
+		margin-bottom 15px
+		color #364657
+		font-family Arial
+		font-size 15px
+		font-weight 400
+.about-tab-delivery-right
+	+below(768px)
+		display none
+	margin-left 5%
+	width 40%
+	img
+		width 100%
+.about-tab-delivery-icon
+	flex(between)
+.about-tab-delivery-icon-el
+	+below(768px)
+		padding 5px
+	+below(480px)
+		height 40px
+	height 60px
+	width 100%
+	padding 20px
+	flex(mid)
+	border 1px solid #eee
+	margin-right 15px
+	img
+		+below(480px)
+			width 80%
+		width 50%
+
+.about-tab-paiment-inf
+	display flex
+	margin-bottom 30px
+.about-tab-paiment-left
+	+below(768px)
+		width 100%
+	width 55%
+	li
+		margin-bottom 15px
+		color #364657
+		font-family Arial
+		font-size 15px
+		font-weight 400
+.about-tab-paiment-right
+	+below(768px)
+		display none
+	margin-left 5%
+	width 40%
+	img
+		width 100%
+.about-tab-paiment-icon
+	flex(between)
+.about-tab-paiment-icon-el
+	+below(768px)
+		padding 5px
+		margin-right 5px
+	+below(480px)
+		height 40px
+	height 60px
+	width 100%
+	padding 20px
+	flex(mid)
+	border 1px solid #eee
+	margin-right 15px
+	img
+		+below(480px)
+			width 80%
+		width 80%
+		
+//.about-review-wraper
+.about-review-el
+	display flex
+	margin-bottom 20px
+.about-review-el-img
+	+below(768px)
+		width 20%
+	width 10%
+	margin-right 20px
+.about-review-el-info
+	+below(768px)
+		width 80%
+	width 90%
+.about-review-el-info-name
+	color #898989
+	font-family Arial
+	font-size 18px
+	font-weight 400
+	margin-bottom 10px
+.about-review-el-info-text
+	color #364657
+	font-family Arial
+	font-size 15px
+	font-weight 400
+	margin-bottom 10px
+.about-review-el-info-bottom
+	flex(between)
+.about-review-el-info-answer
+	color #9d9d9d
+	font-family Arial
+	font-size 13px
+	font-weight 700
+	text-decoration underline
+.about-review-el-info-like
+	color #9d9d9d
+	&:hover
+		cursor pointer
+	
+//.fa
+//.fa-heart
+.about-contact
+	p
+		color #364657
+		font-family Arial
+		font-weight 400
+		font-size 15px
+.about-contact-wraper
+	display flex
+	flex-wrap wrap
+	margin-bottom 20px
+	
+//.about-order-title
+.about-contact-left
+	+below(768px)
+		width 100%
+	width 60%
+.about-contact-right
+	+below(768px)
+		width 100%
+		img
+			width 100%
+	width 40%
+//.about-contact-bot
+
+.about-contact
+	.about-order-title
+		margin-left 0
+		
+.menu-cat-want-text-wrap
+	+below(1100px)
+		width 100%
+	+below(768px)
+		top 52px
+		right -2px
+	position absolute
+	padding 10px
+	background white
+	top 55px
+	border 1px solid #eee
+	right 0px
+	flex(mid)
+	border-bottom 4px solid yellow
+	display none
+.menu-cat-want-text-el
+	+below(1100px)
+		width 100%	
+	display inline-block
+	width 120px
+	margin-right 5px
+	&:last-child
+		margin-right 0
+	flex(mid)
+	flex-flow column
+.menu-cat-want-text-img
+	&:hover
+		border 1px solid yellow
+	border 1px solid #eee
+	img
+		+below(1100px)
+			width 100%
+		width 120px
+		margin-bottom 10px
+.menu-cat-want-text-text
+	color #364657
+	font-family Arial
+	font-size 14px
+	font-weight 400
+	
+.menu-cat-want
+	+above(1100px)
+		&:hover
+			.menu-cat-want-text-wrap
+				flex(mid)
+
+.cabinet-tab-liked-left-soc
+	+below(960px)
+		flex(mid)
+		flex-wrap wrap
+	flex(between)
+	.fa
+		+below(768px)
+			margin-right 3px
+
+.newsFull-content-bot-soc
+		+below(960px)
+			flex(mid)
+			flex-wrap wrap
+		flex(between)
+		.fa
+			+below(768px)
+				margin-right 3px
+				
+			color #A8D3E3
+			margin-right 10px
+			border 1px solid #A8D3E3
+			border-radius 50%
+			font-size 14px
+			line-height 24px
+			height 25px
+			width 25px
+			text-align center
+			&:last-child
+				margin-right 0
+		+below(960px)
+			flex(mid)
+			flex-wrap wrap
+		flex(between)
+		.fa
+			+below(768px)
+				margin-right 3px
+				
+//.newsFull-wrap
+//.part-title
+.newsFull-title
+	+below(768px)
+		margin-top 20px
+	flex(between)
+	flex-wrap wrap
+	padding-bottom 10px
+	margin-bottom 20px
+	margin-top 40px
+	border-bottom 1px solid #eee
+.newsFull-title-left
+	+below(680px)
+		font-size 14px
+		width 100%
+		margin-bottom 10px
+	color #364657
+	font-family Arial
+	font-size 18px
+	font-weight 700
+	line-height 16px
+	text-transform uppercase
+.newsFull-title-right
+	color #9d9d9d
+	font-family Arial
+	font-size 13px
+	font-weight 700
+//.newsFull-content
+.newsFull-content-part
+	display flex
+	flex-flow row wrap
+	&:nth-child(3n-1)
+		+below(768px)
+			flex-flow row wrap
+		flex-flow row-reverse
+		.newsFull-content-part-text
+			+below(768px)
+				width 100%
+				margin-right 0
+			margin-right 5%
+			margin-left 0
+			.newsFull-content-part-img
+				width 100%
+	p
+		margin 0
+		margin-bottom 20px
+		color #364657
+		font-family Arial
+		font-size 15px
+		font-weight 400
+.newsFull-content-part-text
+	+below(768px)
+		width 100%
+		margin-left 0
+	width 65%
+	margin-left 5%
+.newsFull-content-part-img
+	+below(768px)
+		width 100%
+		margin-bottom 20px
+	width 30%
+	img
+		width 100%	
+.newsFull-content-bot
+	display flex
+	flex-flow column
+	align-items flex-end
+.newsFull-content-bot-title
+	display flex
+	align-items center
+	justify-content flex-end
+	margin-bottom 15px
+	span 
+		margin-right 15px
+	
+.newsFull-content-teg
+	margin-right 15px
+	padding 3px 10px
+	color white
+	background #83C4DB
+	&:last-child
+		margin-right 0
+//.newsFull-content-bot-soc
+.newsFull-comments
+	margin-top 30px
+	padding-top 30px
+	border-top 1px solid #eee
+
+
+.registration-private-title
+	+below(768px)
+		font-size 14px
+	color #364657
+	font-family Arial
+	font-size 18px
+	font-weight 400
+	margin-bottom 20px
+	font-weight 700
+	text-transform uppercase
+	text-align center
+//.registration-private-form
+.registration-private-form-row
+	flex(mid)
+	flex-wrap wrap
+	margin-bottom 10px
+.registration-private-form-label
+	+below(680px)
+		width 100%
+		margin-bottom 10px
+		text-align left
+	width 30%
+	text-align right
+	padding-right 20px
+	color #898989
+	font-family Arial
+	font-size 16px
+	font-weight 400
+.registration-private-form-row-input
+	+below(680px)
+		width 100%
+		margin-bottom 10px
+	width 70%
+	input
+		padding 5px
+		border 1px solid #eee
+		width 100%
+		
+.registration-private-form-row-phone
+	.registration-private-form-row-input
+		flex(mid)
+	input
+		&:first-child
+			+below(768px)
+				width 20%
+			width 10%
+			margin-right 2%
+		&:nth-child(2)
+			+below(768px)
+				width 78%
+			width 88%
+			
+.registration-private-form-row-time
+	margin-bottom 30px
+	.registration-private-form-row-input
+		flex(between)
+	select
+		border 1px solid #eee
+		padding 5px
+		width 40%
+		
+.registration-private-form-row-check
+	margin-bottom 20px
+	.registration-private-form-row-input
+		display flex
+		justify-content flex-start
+		input
+			+below(768px)
+				margin-right 10px
+			width 5%
+		span 
+			width 95%
+			color #98c3d9
+			font-family Arial
+			font-size 13px
+			font-weight 400
+
+.registration-private-wraper
+	padding 20px
+	background #F8F8F8
+	margin-bottom 30px
+	
+.registration-private-form-row-pol
+	.registration-private-form-row-input
+		display flex
+		flex-wrap wrap
+.registration-private-form-row-input-el
+	flex(between)
+	margin-right 20px
+	label
+		color #898989
+		font-family Arial
+		font-size 15px
+		font-weight 400
+	input 
+		width 12px
+		height 12px
+		margin-right 10px
+
+.getProduct-left
+	+below(768px)
+		width 100%
+		margin-bottom 20px
+	flex(mid)
+	flex-flow column
+	col(0.25)
+	border 1px solid #eee
+	padding 25px 15px
+	padding-bottom 0
+	.button-block
+		font-size 12px
+		width 100%
+		text-align center
+.getProduct-left-title
+	color #364657
+	font-family Arial
+	font-size 15px
+	font-weight 700
+	text-transform uppercase
+	margin-bottom 20px
+.getProduct-left-check
+	+below(768px)
+		width 100%
+	border-top 1px solid #eee
+	padding 10px 0px
+.getProduct-left-check-el
+	flex(between)
+	align-items flex-start
+	margin-bottom 10px
+	label
+		width 90%
+		color #898989
+		font-family Arial
+		font-size 15px
+		font-weight 400
+.getProduct-left-itog
+	&:nth-child(2)
+		border-bottom 0px!important
+	&:nth-child(3)
+		border-top 0px!important
+	border-top 1px solid #eee
+	border-bottom 1px solid #eee
+	width 100%
+	padding 10px 0
+.getProduct-left-itog-row
+	flex(between)
+.getProduct-left-itog-inf
+	color #898989
+	font-family Arial
+	font-size 13px
+	font-weight 400
+	margin-bottom 5px
+	&:nth-child(2)
+		color lblue
+		text-align right
+.getProduct-footer
+	color #898989
+	font-family Arial
+	font-size 15px
+	font-weight 400
+	text-transform uppercase
+	margin 10px 0
+
+.getProduct-right-title
+	+below(768px)
+		text-align center
+		margin-bottom 20px
+	color #364657
+	font-family Arial
+	font-size 18px
+	font-weight 700
+	line-height 16px
+	text-transform uppercase
+
+.getProduct-right
+	+below(768px)
+		width 100%
+		padding 20px 0px
+	col(0.75)
+	padding 20px
+	background #F8F8F8
+	margin-bottom 30px
+	
+.getProduct-back
+	color #364657
+	font-family Arial
+	font-size 15px
+	font-weight 400
+	text-decoration underline
+	margin-bottom 20px
+
+.getProduct-but
+	flex(mid)
+
+.getProduct-title
+	+below(768px)
+		font-size 14px
+	color #364657
+	font-family Arial
+	font-size 18px
+	font-weight 400
+	margin-bottom 20px
+	font-weight 700
+	text-transform uppercase
+	text-align center
+//.getProduct-form
+.getProduct-form-row
+	flex(mid)
+	flex-wrap wrap
+	margin-bottom 10px
+.getProduct-form-label
+	+below(680px)
+		width 100%
+		margin-bottom 10px
+		text-align left
+	width 30%
+	text-align right
+	padding-right 20px
+	color #898989
+	font-family Arial
+	font-size 16px
+	font-weight 400
+.getProduct-form-row-input
+	+below(680px)
+		width 100%
+		margin-bottom 10px
+	width 70%
+	input
+		padding 5px
+		border 1px solid #eee
+		width 100%
+		
+.getProduct-form-row-phone
+	.getProduct-form-row-input
+		flex(mid)
+	input
+		&:first-child
+			+below(768px)
+				width 20%
+			width 10%
+			margin-right 2%
+		&:nth-child(2)
+			+below(768px)
+				width 78%
+			width 88%
+			
+.getProduct-form-row-time
+	margin-bottom 30px
+	.getProduct-form-row-input
+		flex(between)
+	select
+		border 1px solid #eee
+		padding 5px
+		width 40%
+		
+.getProduct-form-row-check
+	margin-bottom 20px
+	.getProduct-form-row-input
+		display flex
+		justify-content flex-start
+		input
+			+below(768px)
+				margin-right 10px
+			width 5%
+		span 
+			width 95%
+			color #98c3d9
+			font-family Arial
+			font-size 13px
+			font-weight 400
+
+.getProduct-wraper
+	padding 20px
+	background #F8F8F8
+	
+.getProduct-form-row-pol
+	.getProduct-form-row-input
+		display flex
+		flex-wrap wrap
+.getProduct-form-row-input-el
+	flex(between)
+	margin-right 20px
+	label
+		color #898989
+		font-family Arial
+		font-size 15px
+		font-weight 400
+	input 
+		width 12px
+		height 12px
+		margin-right 10px
+		
+.getProduct-form-bonus
+	margin-top 20px
+	flex(mid)
+	flex-flow column
+	input
+		width 80%
+		padding 5px
+		margin-top 10px
+		border 1px solid #eee
+		margin 10px auto
+		display inline-block
+.getProduct-form-bonus-title
+	text-align center
+	color #364657
+	font-family Arial
+	font-size 18px
+	font-weight 400
+	text-transform uppercase
+	margin-bottom 10px
+.getProduct-form-bonus-text
+	color #898989
+	font-family Arial
+	font-size 14px
+	font-weight 400
+	text-align center
+.getProduct-delivery
+	margin-top 20px
+.getProduct-delivery-title
+	text-align center
+	color #364657
+	font-family Arial
+	font-size 18px
+	font-weight 400
+	text-transform uppercase
+	margin-bottom 10px
+.getProduct-delivery-type
+	flex(between)
+	margin-bottom 10px
+	input 
+		margin-right 20px
+.getProduct-delivery-type-text
+	+below(680px)
+		font-size 12px
+		display flex
+		input
+			width 20px
+			height 18px
+	color #898989
+	font-family Arial
+	font-size 16px
+	font-weight 400
+.getProduct-delivery-type-val
+	+below(680px)
+		font-size 10px
+		width 30%
+		text-align right
+	color #364657
+	font-family Arial
+	font-size 16px
+	font-weight 700
+
+.getProduct-delivery-type-shop
+	margin-top 20px
+	input
+		+below(680px)
+			margin-left 10px
+		margin-left 30px
+		
+.getProduct-pay
+	margin-top 30px
+.getProduct-pay-title
+	text-align center
+	color #364657
+	font-family Arial
+	font-size 18px
+	font-weight 400
+	text-transform uppercase
+	margin-bottom 15px
+.getProduct-pay-type
+	+below(680px)
+		font-size 12px
+	input 
+		margin-right 20px
+	color #898989
+	font-family Arial
+	font-size 16px
+	font-weight 400
+	margin-bottom 15px
+//.getProduct-pay-icon
+
+.getProduct-pay-icon
+	flex(between)
+	margin 20px 0px
+.getProduct-icon-el
+	&:last-child
+		margin-right 0
+	+below(768px)
+		padding 5px
+		margin-right 5px
+	+below(480px)
+		height 35px
+	background white
+	height 60px
+	width 100%
+	padding 0px 10px
+	flex(mid)
+	border 1px solid #eee
+	margin-right 15px
+	img
+		+below(480px)
+			width 80%
+		width 100%
+
+#getProduct
+	width 100%
+	border 1px solid #eee
+	margin-bottom 20px

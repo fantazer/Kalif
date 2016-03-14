@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+html(lang="en")
+	//Include header
+	include ./block_html/head.jade
+	include ./block_html/const.jade
+body
+		
+	//Include Header
+	include ./block_html/header.jade
+	//Content
+	.main-cont
+		.content
+			.about-wrap
+				.part-title О магазине 
+				
+				//Cabinet main cont
+				.about-tab 
+					//Cabinet selector
+					ul
+						li 
+							a(href="#about-tab-1") О магазине
+						li 
+							a(href="#about-tab-2") Доставка
+						li 
+							a(href="#about-tab-3") Оплата
+						li 
+							a(href="#about-tab-4") Отзывы
+						li 
+							a(href="#about-tab-5") Контакты
+					//cabinet tab-el
+					.about-tab-el#about-tab-1.about-info
+						.about-info-wraper
+							.about-info-left
+								.about-info-left-el
+									.about-info-left-el-img
+										img(src="img/icon-service.jpg", alt="")
+									.about-info-left-el-text Сервис
+								.about-info-left-el
+									.about-info-left-el-img
+										img(src="img/icon-quality.jpg", alt="")
+									.about-info-left-el-text Качество
+								.about-info-left-el
+									.about-info-left-el-img
+										img(src="img/icon-lowpay.jpg", alt="")
+									.about-info-left-el-text Низкие цены
+							.about-info-right
+								.about-order-title О магазине
+								.about-info-right-img
+									img(src="img/shop-interier-1.jpg", alt="")
+								.about-info-right-img
+									img(src="img/shop-interier-2.jpg", alt="")
+								P  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis consequatur mollitia id animi, quidem quisquam dolores ut magni eos quod veritatis maiores maxime ipsum sapiente nobis asperiores. Sunt, similique
+
+								P  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis consequatur mollitia id animi, quidem quisquam dolores ut magni eos quod veritatis maiores maxime ipsum sapiente nobis asperiores. Sunt, similique, non.
+
+								P  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis consequatur mollitia id animi, quidem quisquam dolores ut magni eos quod veritatis maiores maxime ipsum sapiente nobis asperiores. Sunt, similique, non.
+
+								P  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis consequatur mollitia id animi, quidem quisquam dolores ut magni eos quod veritatis maiores maxime ipsum sapiente nobis asperiores. Sunt, similique, non.
+
+								P  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis consequatur mollitia id animi, quidem quisquam dolores ut magni eos quod veritatis maiores maxime ipsum sapiente nobis asperiores. Sunt, similique, non.Reiciendis consequatur mollitia id animi, quidem quisquam dolores ut magni eos quod veritatis maiores maxime ipsum sapiente nobis asperiores. Sunt, similique, non.Reiciendis consequatur mollitia id animi, quidem quisquam dolores ut magni eos quod veritatis maiores maxime ipsum sapiente nobis asperiores. Sunt, similique, non.
+						
+
+					//cabinet tab-el
+					.about-tab-el#about-tab-2.about-tab-delivery
+						.about-tab-delivery-wraper
+							.about-order-title Доставка
+							.about-tab-delivery-inf
+								.about-tab-delivery-left
+									ol
+										li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta rerum eveniet enim deserunt vitae velit dolore tenetur asperiores, 
+										li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta rerum eveniet enim deserunt vitae velit dolore tenetur asperiores, suscipit voluptatibus!
+										li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+										li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta 
+										li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta rerum eveniet enim deserunt vitae velit dolore tenetur asperiores, suscipit voluptatibus!
+								.about-tab-delivery-right
+									img(src="img/delivery.jpg", alt="")
+							
+							.about-order-title Службы доставки
+							.about-tab-delivery-icon
+								- for (var a = 0; a < 7; a++)
+									.about-tab-delivery-icon-el
+										img(src="img/icon-footer-#{a+1}.png", alt="")
+
+					
+					//cabinet tab-el
+					.cabinet-tab-el#about-tab-3.about-tab-payment
+						.about-tab-paiment-wraper
+							.about-order-title Оплата
+							.about-tab-paiment-inf
+								.about-tab-paiment-left
+									ol
+										li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta rerum eveniet enim deserunt vitae velit dolore tenetur asperiores, 
+										li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta rerum eveniet enim deserunt vitae velit dolore tenetur asperiores, suscipit voluptatibus!
+										li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+										li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta 
+										li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta rerum eveniet enim deserunt vitae velit dolore tenetur asperiores, suscipit voluptasbus!
+								.about-tab-paiment-right
+									img(src="img/paiment.jpg", alt="")
+							
+							.about-order-title Платежные системы
+							.about-tab-paiment-icon
+								- for (var b = 0; b < 7; b++)
+									.about-tab-paiment-icon-el
+										img(src="img/icon-pay-#{b+1}.png", alt="")
+					
+					//cabinet tab-el
+					.cabinet-tab-el#about-tab-4.about-review
+						.about-review-wraper
+							.about-order-title Отзывы о работе магазина
+							- for (var b = 0; b < 3; b++)
+								.about-review-el
+									.about-review-el-img
+										img(src="img/avatar.jpg", alt="")
+									.about-review-el-info
+										.about-review-el-info-name Галина Ивановна
+										.about-review-el-info-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi minus velit quas, cumque officiis earum laboriosam ipsum nesciunt repudiandae labore totam maiores sequi rerum, officia, veritatis voluptas asperiores animi! Praesentium mollitia aut reprehenderit recusandae cupiditate. Sapiente dicta ipsa totam voluptatem!
+										.about-review-el-info-bottom
+											a(href="#").about-review-el-info-answer Ответить
+											.about-review-el-info-like
+												i.fa.fa-heart
+
+						include ./block_html/pagination.jade
+
+						.cabinet-order-review
+							.cabinet-order-review-title Написать отзыв о работе магазина
+							.cabinet-order-review-top
+								.cabinet-order-review-top-left
+									label Оценка
+									.cabinet-order-review-rating.star-rating
+										i.fa.fa-star.active-star
+										i.fa.fa-star.active-star
+										i.fa.fa-star.active-star
+										i.fa.fa-star
+										i.fa.fa-star
+								.cabinet-order-review-top-right
+									label Номер заказа
+									input(type="text").cabinet-order-review-number
+							
+							.cabinet-order-review-text
+									label Ваш отзыв
+									textarea(name="", rows="5")
+							.cabinet-order-review-footer
+								a(href="#").cabinet-order-review-but.button-block Отправить
+
+					//cabinet tab-el
+					.cabinet-tab-el#about-tab-5.about-contact
+						.about-order-title Контакты
+						.about-contact-wraper
+							.about-contact-left
+								p <span class="bold">Адрес:</span>
+								p г.Москва, м. Бабушкинская. Ул. Енисейская д. 17
+								p <span class="bold">Телефон:</span> 89555 55 55 55
+								p <span class="bold">E-mail:</span> Kalif24@yandex.ru
+
+
+
+							.about-contact-right
+								img(src="img/map.jpg", alt="")
+
+						.about-contact-bot
+							.about-order-title О МАГАЗИНЕ
+							p <span class="bold">Как добраться:</span>
+							
+							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente corporis praesentium doloribus maxime magni magnam repellendus minima repudiandae eligendi quibusdam, nemo, molestias animi vero labore reiciendis obcaecati pariatur natus
+
+	//Include footer
+	include ./block_html/footer.jade
+
+	//Include scripts
+	include ./block_html/script.jade
