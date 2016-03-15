@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+html(lang="en")
+	//Include header
+	include ./block_html/head.jade
+	include ./block_html/const.jade
+body
+	
+	//Include Header
+	include ./block_html/header.jade
+	
+	//Content
+	.main-cont
+		.content
+			include ./block_html/breadcrumbs.jade
+			//Left-content
+			.main-left
+				.part-title Новости
+				.main-left-menu-news
+					ul
+						- var menu=['Январь','Февраль','Март','Апрель','Май']
+						- each val in menu 
+							li #{val}
+								ul
+									- each val in menu 
+										li
+											a(href='#') #{val}
+											ul
+												- each val in menu 
+													li
+														a(href='#') #{val}
+
+			//Right-content
+			.main-right
+				.part-title Статьи и видео
+
+				.news-wrap
+					- for (var a = 0; a < 4; a++)
+						.news-wrap-el
+							.news-el-img
+								img(src="img/news-2.jpg", alt="")
+							.news-el-info
+									.news-el-info-title Как выбрать хороший табак
+									.news-el-info-text 	 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident suscipit, aspernatur aliquid ea, vel distinctio cupiditate reprehenderit! Laborum amet, accusantium nesciunt repudiandae, ad illo dignissimos maiores, dolorum est aliquam eveniet.
+									.news-el-info-bottom
+										a(href="#").news-el-info-bottom-comments Комментраии(12)
+										.news-el-info-bottom-more
+											a(href="#") Подробнее
+											.news-el-teg
+												span.bold Теги:
+												.news-el-teg-el Табак 
+												.news-el-teg-el Кальян
+
+
+				
+				
+				
+
+	//Include footer
+	include ./block_html/footer.jade
+
+	//Include scripts
+	include ./block_html/script.jade

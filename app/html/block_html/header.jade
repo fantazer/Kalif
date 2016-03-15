@@ -18,13 +18,14 @@
 				.header-contact-email Kalif@yandex.ru
 			.header-nav.header-wraper-el
 				a(href="#").header-nav-el Мои закладки
-				a(href="#").header-nav-el Просмотреть товары
+				a(href="#").header-nav-el#viewed-product Просмотреть товары
 				a(href="#").header-nav-el Обратная связь
 			.header-basket.header-wraper-el
 				.header-basket-wrap
-					.header-basket-top
-						a(href="#").header-basket-reg Регистрация
-						a(href="#").header-basket-enter Вход
+					// remove class .header-basket-top-register for unregister template
+					.header-basket-top.header-basket-top-register
+						a(href="#").header-basket-reg Здравствуйте, Игорь Сергеевич
+						a(href="#").header-basket-enter#modal-registration Вход
 					.header-basket-inf-wrap
 						.header-basket-inf-wrap-img
 							img(src="img/icon-basket.png", alt="")

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html(lang="en")
+	//Include header
+	include ./block_html/head.jade
+	include ./block_html/const.jade
+body
+	
+	//Include Header
+	include ./block_html/header.jade
+	
+	//Content
+	.main-cont
+		.content
+			include ./block_html/breadcrumbs.jade
+			//Left-content
+			.main-left
+				.part-title Категории
+				//Left-menu
+				include ./block_html/left-menu.jade
+				
+
+			//Right-content
+			.main-right
+				.catalog-block
+					- for (var a = 0; a < 8; a++)
+						a(href="#").catalog-block-el
+							.catalog-block-el-img
+								img(src="img/catalog-1.png", alt="")
+							.catalog-block-el-text
+								.catalog-block-el-title Бестабачная продукция
+								.catalog-block-el-number 92
+
+	//Include footer
+	include ./block_html/footer.jade
+
+	//Include scripts
+	include ./block_html/script.jade

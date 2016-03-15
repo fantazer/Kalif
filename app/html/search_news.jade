@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+html(lang="en")
+	//Include header
+	include ./block_html/head.jade
+	include ./block_html/const.jade
+body
+	
+	//Include Header
+	include ./block_html/header.jade
+	
+	//Content
+	.main-cont
+		.content
+			include ./block_html/breadcrumbs.jade
+			//Left-content
+			.main-left
+				.part-title Результаты поиска
+				//Left-menu
+				include ./block_html/left-menu.jade
+
+
+			//Right-content
+			.main-right
+				.srotby-block
+					.srotby-block-left Cортировать по:
+					.srotby-block-type
+						a(href="#").srotby-block-type-el цене
+						a(href="#").srotby-block-type-el.srotby-block-type-active оценкам
+						a(href="#").srotby-block-type-el цене и оценкам
+						a(href="#").srotby-block-type-el новинкам
+						a(href="#").srotby-block-type-el алфавиту
+					.srotby-block-left-icon
+						.srotby-block-left-icon-el
+							a(href="#")
+								img(src="img/sort-block.png", alt="")
+						.srotby-block-left-icon-el.srotby-block-left-icon-active
+							a(href="#")
+								img(src="img/sort-row.png", alt="")
+				.product-pagination
+					include ./block_html/pagination.jade 
+				.search-news-wraper
+					- for (var d = 0; d < 6; d++)
+						.search-news-el
+						.search-news-el-title Заголовок новости
+						.search-news-el-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex molestiae, porro accusantium expedita cupiditate rerum sequi ratione laborum, voluptates quas, placeat? Quaerat, beatae. Saepe vel facilis, quo, architecto exercitationem veniam.
+							
+				.product-pagination
+					include ./block_html/pagination.jade
+
+	//Include footer
+	include ./block_html/footer.jade
+
+	//Include scripts
+	include ./block_html/script.jade

@@ -41,3 +41,72 @@
 				.footer-contact-soc-right
 					- for (var y = 0; y < 7; y++)
 						img(src="img/icon-footer-#{y+1}.png", alt="")
+
+.footer-page
+	a(href="about.html") about
+	a(href="cabinet.html") cabinet
+	a(href="get_product.html") get_product
+	a(href="news.html") news
+	a(href="news_full.html") news_full
+	a(href="product.html") product
+	a(href="registration.html") registration 
+	a(href="sale.html") sale 
+	a(href="catalog.html") catalog 
+	a(href="search_news.html") search_news 
+
+//Modal registration
+.modal-wraper.modal-registration
+	.modal-close
+		i.fa.fa-times-circle
+	.modal-registration-wraper
+		.modal-registration-title
+			.modal-registration-title-text Авторизация
+			a(href="#") Регистрация
+		.modal-registration-input
+			input(type="text" placeholder="E-mail")
+			input(type="password" placeholder="Пароль")
+		.modal-registration-remember
+			input(type="checkbox")
+			label Запомнить меня на этом компьютере
+		.modal-registration-but
+			button.modal-registration-button Вход
+		.modal-registration-but-text Забыли свой пароль? Мы поможем его <a href=""> восстановить</a>
+		hr 
+		.modal-registration-soc
+			.modal-registration-soc-text Авторизация через соц.сети
+			.modal-registration-soc-el
+				i.fa.fa-facebook
+				i.fa.fa-vk
+				i.fa.fa-twitter
+				i.fa.fa-google-plus
+				i.fa.fa-youtube
+				i.fa.fa-instagram
+
+//Modal broduct
+.modal-wraper.modal-product
+	.modal-close
+		i.fa.fa-times-circle
+	.modal-product-wraper
+		.modal-product-title Просмотренные товары
+		.modal-card-wraper.owl-carousel
+			- for (var d = 0; d < 6; d++)
+				.modal-card-el
+					.modal-card-view
+						.modal-card-view-close
+							a(href="#") 
+								i.fa.fa-times-circle
+						.modal-card-reiting.star-rating
+							i.fa.fa-star.active-star
+							i.fa.fa-star.active-star
+							i.fa.fa-star.active-star
+							i.fa.fa-star
+							i.fa.fa-star
+						.modal-card-img
+							img(src="img/product-1.jpg", alt="")
+						.modal-card-name Кальян Ager 1251rg 74 см
+						a(href="#").modal-card-review отзывы(12)
+						.modal-card-bottom
+							.modal-card-price 3525 руб.
+							.modal-card-check
+								input(type="checkbox")
+								label в Избранное

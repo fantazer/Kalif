@@ -11,6 +11,7 @@
 
 $(document).ready(function(){
 	$('.main-left-menu').easytree();
+	$('.main-left-menu-news').easytree();
 
 
   $('.menu-cat-product').click(function(){
@@ -82,6 +83,10 @@ $(document).ready(function(){
 		        }
 		    });
    	}
+
+   	$('.main-left-sort-title').click(function(){
+   		$('.main-left-sort-block').slideToggle()
+   	})
 	/* ###### init EasyDropDown style for selects  ######*/
 	/* ###### bower i easydropdown  ######*/
 	/*<select class="dropdown"> add class (dropdown)
@@ -95,13 +100,18 @@ $(document).ready(function(){
 	/* ###### init bpopup  ######*/
 	/* ###### bower i bpopup  ######*/
 	// Add class hide
-	// $('.section-main-form button').click(function(){
-	//	$('.section-modal').bPopup({
-	// 			closeClass:'section-modal-but',
-	//			position:['auto','auto'], // position center
-	//			follow: [true,false],
-	// 	}); 
-	//})
+	$('#modal-registration').click(function(){
+		$('.modal-registration').bPopup({
+				closeClass:'modal-close',
+				position:['auto','auto'], // position center
+		}); 
+	})
+$('#viewed-product').click(function(){
+		$('.modal-product').bPopup({
+				closeClass:'modal-close',
+				position:['auto','auto'], // position center
+		}); 
+	})
 
 
 	/* ###### init stickUp  ######*/
@@ -122,6 +132,36 @@ $(document).ready(function(){
 			
 	 	}
 	 ); 	
+	$(".product-left-slide").owlCarousel({
+	 	items : 1,
+
+	 	pagination : false,
+	 	autoPlay : true,
+	 	singleItem:true,
+	 	nav:false,
+		nav:true,
+		navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
+	 	}
+	 ); 
+
+	$(".modal-card-wraper").owlCarousel({
+	 	responsive : {
+	 		0:{
+			 	items : 1
+		 	},
+		 	480:{
+			 	items : 3
+		 	}
+		 	
+	  },
+	 	pagination : false,
+	 	autoPlay : true,
+	 	margin : 10,
+	 	nav:false,
+		nav:true,
+		navText:['<div class="modal-product-nav-el">Предыдущие</div>','<div class="modal-product-nav-el">Слудующие</div>']
+	 	}
+	 );
 
 	/* ###### init validate form  ######*/
 	/* ###### bower i jquery-validation ######*/
@@ -172,6 +212,15 @@ $(document).ready(function(){
         
 });
 $('.about-tab').responsiveTabs({
+         //rotate: false,
+         //startCollapsed: 'accordion',
+         //collapsible: 'accordion',
+         //setHash: true,
+         active: 0,
+         scrollToAccordion: true
+         
+ });
+$('.product-tab').responsiveTabs({
          //rotate: false,
          //startCollapsed: 'accordion',
          //collapsible: 'accordion',

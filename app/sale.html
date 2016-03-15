@@ -5,7 +5,13 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Document</title>
-    <link rel="stylesheet" href="css/vendor.css">
+    <!--build:css css/vendor.css-->
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css"/>
+    <link rel="stylesheet" href="bower/components-font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.css"/>
+    <link rel="stylesheet" href="bower/responsive-tabs/css/responsive-tabs.css"/>
+    <link rel="stylesheet" href="css/ui.easytree.css"/>
+    <!--endbuild-->
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="http://webfonts.ru/import/opensans.css"/>
   </head>
@@ -26,11 +32,11 @@
           <div class="header-contact-phone">8 900 555 22 33</div>
           <div class="header-contact-email">Kalif@yandex.ru</div>
         </div>
-        <div class="header-nav header-wraper-el"><a href="#" class="header-nav-el">Мои закладки</a><a href="#" class="header-nav-el">Просмотреть товары</a><a href="#" class="header-nav-el">Обратная связь</a></div>
+        <div class="header-nav header-wraper-el"><a href="#" class="header-nav-el">Мои закладки</a><a href="#" id="viewed-product" class="header-nav-el">Просмотреть товары</a><a href="#" class="header-nav-el">Обратная связь</a></div>
         <div class="header-basket header-wraper-el">
           <div class="header-basket-wrap">
             <!-- remove class .header-basket-top-register for unregister template-->
-            <div class="header-basket-top header-basket-top-register"><a href="#" class="header-basket-reg">Здравствуйте, Игорь Сергеевич</a><a href="#" class="header-basket-enter">Вход</a></div>
+            <div class="header-basket-top header-basket-top-register"><a href="#" class="header-basket-reg">Здравствуйте, Игорь Сергеевич</a><a href="#" id="modal-registration" class="header-basket-enter">Вход</a></div>
             <div class="header-basket-inf-wrap">
               <div class="header-basket-inf-wrap-img"><img src="img/icon-basket.png" alt=""/></div>
               <div class="header-basket-inf-wrap-el">
@@ -411,100 +417,279 @@
       <div class="breadcrumbs-block"><a href="#" class="breadcrumbs-block-el">Цепочка навигации</a><a href="#" class="breadcrumbs-block-el">Раздел</a>
         <div class="breadcrumbs-block-el">Текущий раздел</div>
       </div>
-      <div class="registration-wrap">
-        <div class="part-title">Регистрация</div>
-        <div class="registration-private-wraper">
-          <div class="registration-private-title">Персональные данные</div>
-          <div class="registration-private-form">
-                        <div class="registration-private-form-row">
-                          <div class="registration-private-form-label"> Адрес e-mail </div>
-                          <div class="registration-private-form-row-input">
-                            <input type="text"/>
-                          </div>
-                        </div>
-                        <div class="registration-private-form-row">
-                          <div class="registration-private-form-label"> Пароль </div>
-                          <div class="registration-private-form-row-input">
-                            <input type="text"/>
-                          </div>
-                        </div>
-                        <div class="registration-private-form-row">
-                          <div class="registration-private-form-label"> Подтверждение пароля </div>
-                          <div class="registration-private-form-row-input">
-                            <input type="text"/>
-                          </div>
-                        </div>
-            <div class="registration-private-form-row registration-private-form-row-pol">
-              <div class="registration-private-form-label">Обращение</div>
-              <div class="registration-private-form-row-input">
-                <div class="registration-private-form-row-input-el">
-                  <div>
-                    <input type="checkbox"/>
-                  </div>
-                  <label>Уважаемая</label>
+      <!--Left-content-->
+      <div class="main-left">
+        <div class="part-title">Акции и скидки</div>
+        <!--Left-menu-->
+        <div class="main-left-menu">
+          <ul>
+            <li>Кальяны
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>Элеткронные кальяны
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>Табак
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>Бестабачная продукция
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>Уголь
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>Горелки, плитки, газ
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>Комплектующие
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>Аксессуары
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="main-left-sort">
+          <div class="main-left-sort-title">Сортировать список
+            <div class="fa fa-caret-down"></div>
+          </div>
+          <div class="main-left-sort-block">
+            <div class="main-left-sort-wraper">
+              <div class="main-left-sort-el">
+                <div class="main-left-sort-el-title">Бренды</div>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
                 </div>
-                <div class="registration-private-form-row-input-el">
-                  <div>
-                    <input type="checkbox"/>
-                  </div>
-                  <label>Уважаемый</label>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
+                </div>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
+                </div>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
                 </div>
               </div>
-            </div>
-                        <div class="registration-private-form-row">
-                          <div class="registration-private-form-label"> Фамилия </div>
-                          <div class="registration-private-form-row-input">
-                            <input type="text"/>
-                          </div>
-                        </div>
-                        <div class="registration-private-form-row">
-                          <div class="registration-private-form-label"> Имя </div>
-                          <div class="registration-private-form-row-input">
-                            <input type="text"/>
-                          </div>
-                        </div>
-            <div class="registration-private-form-row registration-private-form-row-phone">
-              <div class="registration-private-form-label">Мобильный телефон</div>
-              <div class="registration-private-form-row-input">
-                <input type="text"/>
-                <input type="text"/>
+              <div class="main-left-sort-el">
+                <div class="main-left-sort-el-title">Бренды</div>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
+                </div>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
+                </div>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
+                </div>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
+                </div>
               </div>
-            </div>
-            <div class="registration-private-form-row">
-              <div class="registration-private-form-label">Адрес доставки</div>
-              <div class="registration-private-form-row-input">
-                <input type="text"/>
+              <div class="main-left-sort-el">
+                <div class="main-left-sort-el-title">Бренды</div>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
+                </div>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
+                </div>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
+                </div>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
+                </div>
               </div>
-            </div>
-            <div class="registration-private-form-row registration-private-form-row-time">
-              <div class="registration-private-form-label">Время доставки</div>
-              <div class="registration-private-form-row-input"><span>c</span>
-                <select name="">
-                  <option>08:00</option>
-                  <option>08:00</option>
-                  <option>08:00</option>
-                </select><span>до</span>
-                <select name="">
-                  <option>23:00</option>
-                  <option>23:00</option>
-                  <option>23:00</option>
-                </select>
-              </div>
-            </div>
-            <div class="registration-private-form-row registration-private-form-row-check">
-              <div class="registration-private-form-label"> </div>
-              <div class="registration-private-form-row-input">
-                <input type="checkbox"/><span>Я хочу получать информацию об акциях, скидках, новинках, а также бесплатные советы и рекомендации от kalif24.ru</span>
-              </div>
-            </div>
-            <div class="registration-private-form-row registration-private-form-row-check">
-              <div class="registration-private-form-label"> </div>
-              <div class="registration-private-form-row-input">
-                <input type="checkbox"/><span>Регистрируясь на сайте kalif24.ru Вы подтверждаете согласие с правилами обработки своих персональных данных.</span>
+              <div class="main-left-sort-el">
+                <div class="main-left-sort-el-title">Бренды</div>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
+                </div>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
+                </div>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
+                </div>
+                <div class="main-left-sort-input">
+                  <input type="checkbox"/>
+                  <label>Название</label>
+                </div>
               </div>
             </div>
           </div>
-          <div class="cabinet-tab-basket-but"><a href="#" class="button-block">Зарегистрироваться</a></div>
+        </div>
+      </div>
+      <!--Right-content-->
+      <div class="main-right">
+        <div class="srotby-block">
+          <div class="srotby-block-left">Cортировать по:</div>
+          <div class="srotby-block-type"><a href="#" class="srotby-block-type-el">цене</a><a href="#" class="srotby-block-type-el srotby-block-type-active">оценкам</a><a href="#" class="srotby-block-type-el">цене и оценкам</a><a href="#" class="srotby-block-type-el">новинкам</a><a href="#" class="srotby-block-type-el">алфавиту</a></div>
+          <div class="srotby-block-left-icon">
+            <div class="srotby-block-left-icon-el"><a href="#"><img src="img/sort-block.png" alt=""/></a></div>
+            <div class="srotby-block-left-icon-el srotby-block-left-icon-active"><a href="#"><img src="img/sort-row.png" alt=""/></a></div>
+          </div>
+        </div>
+        <div class="product-pagination">
+          <div class="block-pagination">
+            <div class="block-pagination-wrap"><a href="#"><<</a><a href="#"><</a><a href="#">1</a><a href="#" class="active-pagination">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">...</a><a href="#">9</a><a href="#">></a><a href="#">>></a></div>
+            <div class="block-pagination-all">
+              <div class="block-pagination-all-top">Показать еще</div>
+              <div class="block-pagination-all-val">Показано 1-5 из 20</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card-wraper">
+          <div class="product-card-el">
+            <div class="product-card-view">
+              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
+              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
+              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
+            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
+              <div class="product-card-price">3525 руб.</div>
+              <div class="product-card-getText">в корзину</div></a>
+          </div>
+          <div class="product-card-el">
+            <div class="product-card-view">
+              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
+              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
+              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
+            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
+              <div class="product-card-price">3525 руб.</div>
+              <div class="product-card-getText">в корзину</div></a>
+          </div>
+          <div class="product-card-el">
+            <div class="product-card-view">
+              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
+              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
+              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
+            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
+              <div class="product-card-price">3525 руб.</div>
+              <div class="product-card-getText">в корзину</div></a>
+          </div>
+          <div class="product-card-el">
+            <div class="product-card-view">
+              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
+              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
+              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
+            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
+              <div class="product-card-price">3525 руб.</div>
+              <div class="product-card-getText">в корзину</div></a>
+          </div>
+          <div class="product-card-el">
+            <div class="product-card-view">
+              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
+              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
+              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
+            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
+              <div class="product-card-price">3525 руб.</div>
+              <div class="product-card-getText">в корзину</div></a>
+          </div>
+          <div class="product-card-el">
+            <div class="product-card-view">
+              <div class="product-card-reiting"><i class="fa fa-star"></i></div>
+              <div class="product-card-img"><img src="img/product-1.jpg" alt=""/></div>
+              <div class="product-card-name">Кальян Ager 1251rg 74 см</div>
+            </div><a href="#" class="product-card-review">отзывы(12)</a><a href="#" class="product-card-but">
+              <div class="product-card-price">3525 руб.</div>
+              <div class="product-card-getText">в корзину</div></a>
+          </div>
+        </div>
+        <div class="product-pagination">
+          <div class="block-pagination">
+            <div class="block-pagination-wrap"><a href="#"><<</a><a href="#"><</a><a href="#">1</a><a href="#" class="active-pagination">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">...</a><a href="#">9</a><a href="#">></a><a href="#">>></a></div>
+            <div class="block-pagination-all">
+              <div class="block-pagination-all-top">Показать еще</div>
+              <div class="block-pagination-all-val">Показано 1-5 из 20</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -541,8 +726,139 @@
       </div>
     </div>
   </div>
-  <div class="footer-page"><a href="about.html">about</a><a href="cabinet.html">cabinet</a><a href="get_product.html">get_product</a><a href="news.html">news</a><a href="news_full.html">news_full</a><a href="product.html">product</a><a href="registration.html">registration </a></div>
+  <div class="footer-page"><a href="about.html">about</a><a href="cabinet.html">cabinet</a><a href="get_product.html">get_product</a><a href="news.html">news</a><a href="news_full.html">news_full</a><a href="product.html">product</a><a href="registration.html">registration </a><a href="sale.html">sale </a><a href="catalog.html">catalog </a><a href="search_news.html">search_news </a></div>
+  <!--Modal registration-->
+  <div class="modal-wraper modal-registration">
+    <div class="modal-close"><i class="fa fa-times-circle"></i></div>
+    <div class="modal-registration-wraper">
+      <div class="modal-registration-title">
+        <div class="modal-registration-title-text">Авторизация</div><a href="#">Регистрация</a>
+      </div>
+      <div class="modal-registration-input">
+        <input type="text" placeholder="E-mail"/>
+        <input type="password" placeholder="Пароль"/>
+      </div>
+      <div class="modal-registration-remember">
+        <input type="checkbox"/>
+        <label>Запомнить меня на этом компьютере</label>
+      </div>
+      <div class="modal-registration-but">
+        <button class="modal-registration-button">Вход</button>
+      </div>
+      <div class="modal-registration-but-text">Забыли свой пароль? Мы поможем его <a href=""> восстановить</a></div>
+      <hr/>
+      <div class="modal-registration-soc">
+        <div class="modal-registration-soc-text">Авторизация через соц.сети</div>
+        <div class="modal-registration-soc-el"><i class="fa fa-facebook"></i><i class="fa fa-vk"></i><i class="fa fa-twitter"></i><i class="fa fa-google-plus"></i><i class="fa fa-youtube"></i><i class="fa fa-instagram"></i></div>
+      </div>
+    </div>
+  </div>
+  <!--Modal broduct-->
+  <div class="modal-wraper modal-product">
+    <div class="modal-close"><i class="fa fa-times-circle"></i></div>
+    <div class="modal-product-wraper">
+      <div class="modal-product-title">Просмотренные товары</div>
+      <div class="modal-card-wraper owl-carousel">
+        <div class="modal-card-el">
+          <div class="modal-card-view">
+            <div class="modal-card-view-close"><a href="#"> <i class="fa fa-times-circle"></i></a></div>
+            <div class="modal-card-reiting star-rating"><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <div class="modal-card-img"><img src="img/product-1.jpg" alt=""/></div>
+            <div class="modal-card-name">Кальян Ager 1251rg 74 см</div><a href="#" class="modal-card-review">отзывы(12)</a>
+            <div class="modal-card-bottom">
+              <div class="modal-card-price">3525 руб.</div>
+              <div class="modal-card-check">
+                <input type="checkbox"/>
+                <label>в Избранное</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-card-el">
+          <div class="modal-card-view">
+            <div class="modal-card-view-close"><a href="#"> <i class="fa fa-times-circle"></i></a></div>
+            <div class="modal-card-reiting star-rating"><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <div class="modal-card-img"><img src="img/product-1.jpg" alt=""/></div>
+            <div class="modal-card-name">Кальян Ager 1251rg 74 см</div><a href="#" class="modal-card-review">отзывы(12)</a>
+            <div class="modal-card-bottom">
+              <div class="modal-card-price">3525 руб.</div>
+              <div class="modal-card-check">
+                <input type="checkbox"/>
+                <label>в Избранное</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-card-el">
+          <div class="modal-card-view">
+            <div class="modal-card-view-close"><a href="#"> <i class="fa fa-times-circle"></i></a></div>
+            <div class="modal-card-reiting star-rating"><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <div class="modal-card-img"><img src="img/product-1.jpg" alt=""/></div>
+            <div class="modal-card-name">Кальян Ager 1251rg 74 см</div><a href="#" class="modal-card-review">отзывы(12)</a>
+            <div class="modal-card-bottom">
+              <div class="modal-card-price">3525 руб.</div>
+              <div class="modal-card-check">
+                <input type="checkbox"/>
+                <label>в Избранное</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-card-el">
+          <div class="modal-card-view">
+            <div class="modal-card-view-close"><a href="#"> <i class="fa fa-times-circle"></i></a></div>
+            <div class="modal-card-reiting star-rating"><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <div class="modal-card-img"><img src="img/product-1.jpg" alt=""/></div>
+            <div class="modal-card-name">Кальян Ager 1251rg 74 см</div><a href="#" class="modal-card-review">отзывы(12)</a>
+            <div class="modal-card-bottom">
+              <div class="modal-card-price">3525 руб.</div>
+              <div class="modal-card-check">
+                <input type="checkbox"/>
+                <label>в Избранное</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-card-el">
+          <div class="modal-card-view">
+            <div class="modal-card-view-close"><a href="#"> <i class="fa fa-times-circle"></i></a></div>
+            <div class="modal-card-reiting star-rating"><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <div class="modal-card-img"><img src="img/product-1.jpg" alt=""/></div>
+            <div class="modal-card-name">Кальян Ager 1251rg 74 см</div><a href="#" class="modal-card-review">отзывы(12)</a>
+            <div class="modal-card-bottom">
+              <div class="modal-card-price">3525 руб.</div>
+              <div class="modal-card-check">
+                <input type="checkbox"/>
+                <label>в Избранное</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-card-el">
+          <div class="modal-card-view">
+            <div class="modal-card-view-close"><a href="#"> <i class="fa fa-times-circle"></i></a></div>
+            <div class="modal-card-reiting star-rating"><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <div class="modal-card-img"><img src="img/product-1.jpg" alt=""/></div>
+            <div class="modal-card-name">Кальян Ager 1251rg 74 см</div><a href="#" class="modal-card-review">отзывы(12)</a>
+            <div class="modal-card-bottom">
+              <div class="modal-card-price">3525 руб.</div>
+              <div class="modal-card-check">
+                <input type="checkbox"/>
+                <label>в Избранное</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--Include scripts-->
-  <script src="js/combined.js"></script>
+  <!--build:js js/combined.js-->
+  <script src="bower/jquery/dist/jquery.js"></script>
+  <script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="bower/responsive-tabs/js/jquery.responsiveTabs.min.js"></script>
+  <script src="bower/bPopup/jquery.bpopup.min.js"></script>
+  <script src="js/jquery.easytree.min.js"></script>
+  <!-- endbuild-->
   <script src="js/script.js"></script>
 </body>

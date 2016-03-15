@@ -5,7 +5,13 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Document</title>
-    <link rel="stylesheet" href="css/vendor.css">
+    <!--build:css css/vendor.css-->
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css"/>
+    <link rel="stylesheet" href="bower/components-font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.css"/>
+    <link rel="stylesheet" href="bower/responsive-tabs/css/responsive-tabs.css"/>
+    <link rel="stylesheet" href="css/ui.easytree.css"/>
+    <!--endbuild-->
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="http://webfonts.ru/import/opensans.css"/>
   </head>
@@ -411,100 +417,154 @@
       <div class="breadcrumbs-block"><a href="#" class="breadcrumbs-block-el">Цепочка навигации</a><a href="#" class="breadcrumbs-block-el">Раздел</a>
         <div class="breadcrumbs-block-el">Текущий раздел</div>
       </div>
-      <div class="registration-wrap">
-        <div class="part-title">Регистрация</div>
-        <div class="registration-private-wraper">
-          <div class="registration-private-title">Персональные данные</div>
-          <div class="registration-private-form">
-                        <div class="registration-private-form-row">
-                          <div class="registration-private-form-label"> Адрес e-mail </div>
-                          <div class="registration-private-form-row-input">
-                            <input type="text"/>
-                          </div>
-                        </div>
-                        <div class="registration-private-form-row">
-                          <div class="registration-private-form-label"> Пароль </div>
-                          <div class="registration-private-form-row-input">
-                            <input type="text"/>
-                          </div>
-                        </div>
-                        <div class="registration-private-form-row">
-                          <div class="registration-private-form-label"> Подтверждение пароля </div>
-                          <div class="registration-private-form-row-input">
-                            <input type="text"/>
-                          </div>
-                        </div>
-            <div class="registration-private-form-row registration-private-form-row-pol">
-              <div class="registration-private-form-label">Обращение</div>
-              <div class="registration-private-form-row-input">
-                <div class="registration-private-form-row-input-el">
-                  <div>
-                    <input type="checkbox"/>
-                  </div>
-                  <label>Уважаемая</label>
-                </div>
-                <div class="registration-private-form-row-input-el">
-                  <div>
-                    <input type="checkbox"/>
-                  </div>
-                  <label>Уважаемый</label>
-                </div>
-              </div>
-            </div>
-                        <div class="registration-private-form-row">
-                          <div class="registration-private-form-label"> Фамилия </div>
-                          <div class="registration-private-form-row-input">
-                            <input type="text"/>
-                          </div>
-                        </div>
-                        <div class="registration-private-form-row">
-                          <div class="registration-private-form-label"> Имя </div>
-                          <div class="registration-private-form-row-input">
-                            <input type="text"/>
-                          </div>
-                        </div>
-            <div class="registration-private-form-row registration-private-form-row-phone">
-              <div class="registration-private-form-label">Мобильный телефон</div>
-              <div class="registration-private-form-row-input">
-                <input type="text"/>
-                <input type="text"/>
-              </div>
-            </div>
-            <div class="registration-private-form-row">
-              <div class="registration-private-form-label">Адрес доставки</div>
-              <div class="registration-private-form-row-input">
-                <input type="text"/>
-              </div>
-            </div>
-            <div class="registration-private-form-row registration-private-form-row-time">
-              <div class="registration-private-form-label">Время доставки</div>
-              <div class="registration-private-form-row-input"><span>c</span>
-                <select name="">
-                  <option>08:00</option>
-                  <option>08:00</option>
-                  <option>08:00</option>
-                </select><span>до</span>
-                <select name="">
-                  <option>23:00</option>
-                  <option>23:00</option>
-                  <option>23:00</option>
-                </select>
-              </div>
-            </div>
-            <div class="registration-private-form-row registration-private-form-row-check">
-              <div class="registration-private-form-label"> </div>
-              <div class="registration-private-form-row-input">
-                <input type="checkbox"/><span>Я хочу получать информацию об акциях, скидках, новинках, а также бесплатные советы и рекомендации от kalif24.ru</span>
-              </div>
-            </div>
-            <div class="registration-private-form-row registration-private-form-row-check">
-              <div class="registration-private-form-label"> </div>
-              <div class="registration-private-form-row-input">
-                <input type="checkbox"/><span>Регистрируясь на сайте kalif24.ru Вы подтверждаете согласие с правилами обработки своих персональных данных.</span>
-              </div>
-            </div>
-          </div>
-          <div class="cabinet-tab-basket-but"><a href="#" class="button-block">Зарегистрироваться</a></div>
+      <!--Left-content-->
+      <div class="main-left">
+        <div class="part-title">Категории</div>
+        <!--Left-menu-->
+        <div class="main-left-menu">
+          <ul>
+            <li>Кальяны
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>Элеткронные кальяны
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>Табак
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>Бестабачная продукция
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>Уголь
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>Горелки, плитки, газ
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>Комплектующие
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>Аксессуары
+              <ul>
+                <li><a href="#">Кальяны</a></li>
+                <li><a href="#">Элеткронные кальяны</a></li>
+                <li><a href="#">Табак</a></li>
+                <li><a href="#">Бестабачная продукция</a></li>
+                <li><a href="#">Уголь</a></li>
+                <li><a href="#">Горелки, плитки, газ</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Right-content-->
+      <div class="main-right">
+        <div class="catalog-block"><a href="#" class="catalog-block-el">
+            <div class="catalog-block-el-img"><img src="img/catalog-1.png" alt=""/></div>
+            <div class="catalog-block-el-text">
+              <div class="catalog-block-el-title">Бестабачная продукция</div>
+              <div class="catalog-block-el-number">92</div>
+            </div></a><a href="#" class="catalog-block-el">
+            <div class="catalog-block-el-img"><img src="img/catalog-1.png" alt=""/></div>
+            <div class="catalog-block-el-text">
+              <div class="catalog-block-el-title">Бестабачная продукция</div>
+              <div class="catalog-block-el-number">92</div>
+            </div></a><a href="#" class="catalog-block-el">
+            <div class="catalog-block-el-img"><img src="img/catalog-1.png" alt=""/></div>
+            <div class="catalog-block-el-text">
+              <div class="catalog-block-el-title">Бестабачная продукция</div>
+              <div class="catalog-block-el-number">92</div>
+            </div></a><a href="#" class="catalog-block-el">
+            <div class="catalog-block-el-img"><img src="img/catalog-1.png" alt=""/></div>
+            <div class="catalog-block-el-text">
+              <div class="catalog-block-el-title">Бестабачная продукция</div>
+              <div class="catalog-block-el-number">92</div>
+            </div></a><a href="#" class="catalog-block-el">
+            <div class="catalog-block-el-img"><img src="img/catalog-1.png" alt=""/></div>
+            <div class="catalog-block-el-text">
+              <div class="catalog-block-el-title">Бестабачная продукция</div>
+              <div class="catalog-block-el-number">92</div>
+            </div></a><a href="#" class="catalog-block-el">
+            <div class="catalog-block-el-img"><img src="img/catalog-1.png" alt=""/></div>
+            <div class="catalog-block-el-text">
+              <div class="catalog-block-el-title">Бестабачная продукция</div>
+              <div class="catalog-block-el-number">92</div>
+            </div></a><a href="#" class="catalog-block-el">
+            <div class="catalog-block-el-img"><img src="img/catalog-1.png" alt=""/></div>
+            <div class="catalog-block-el-text">
+              <div class="catalog-block-el-title">Бестабачная продукция</div>
+              <div class="catalog-block-el-number">92</div>
+            </div></a><a href="#" class="catalog-block-el">
+            <div class="catalog-block-el-img"><img src="img/catalog-1.png" alt=""/></div>
+            <div class="catalog-block-el-text">
+              <div class="catalog-block-el-title">Бестабачная продукция</div>
+              <div class="catalog-block-el-number">92</div>
+            </div></a>
         </div>
       </div>
     </div>
@@ -543,6 +603,11 @@
   </div>
   <div class="footer-page"><a href="about.html">about</a><a href="cabinet.html">cabinet</a><a href="get_product.html">get_product</a><a href="news.html">news</a><a href="news_full.html">news_full</a><a href="product.html">product</a><a href="registration.html">registration </a></div>
   <!--Include scripts-->
-  <script src="js/combined.js"></script>
+  <!--build:js js/combined.js-->
+  <script src="bower/jquery/dist/jquery.js"></script>
+  <script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="bower/responsive-tabs/js/jquery.responsiveTabs.min.js"></script>
+  <script src="js/jquery.easytree.min.js"></script>
+  <!-- endbuild-->
   <script src="js/script.js"></script>
 </body>

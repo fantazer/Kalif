@@ -29,7 +29,8 @@
         <div class="header-nav header-wraper-el"><a href="#" class="header-nav-el">Мои закладки</a><a href="#" class="header-nav-el">Просмотреть товары</a><a href="#" class="header-nav-el">Обратная связь</a></div>
         <div class="header-basket header-wraper-el">
           <div class="header-basket-wrap">
-            <div class="header-basket-top"><a href="#" class="header-basket-reg">Регистрация</a><a href="#" class="header-basket-enter">Вход</a></div>
+            <!-- remove class .header-basket-top-register for unregister template-->
+            <div class="header-basket-top header-basket-top-register"><a href="#" class="header-basket-reg">Здравствуйте, Игорь Сергеевич</a><a href="#" class="header-basket-enter">Вход</a></div>
             <div class="header-basket-inf-wrap">
               <div class="header-basket-inf-wrap-img"><img src="img/icon-basket.png" alt=""/></div>
               <div class="header-basket-inf-wrap-el">
@@ -407,6 +408,9 @@
   <!--Content-->
   <div class="main-cont">
     <div class="content">
+      <div class="breadcrumbs-block"><a href="#" class="breadcrumbs-block-el">Цепочка навигации</a><a href="#" class="breadcrumbs-block-el">Раздел</a>
+        <div class="breadcrumbs-block-el">Текущий раздел</div>
+      </div>
       <div class="getProduct-wrap">
         <div class="part-title">Оформление товара</div>
         <div class="getProduct-left">
@@ -587,6 +591,7 @@
       </div>
     </div>
   </div>
+  <div class="footer-page"><a href="about.html">about</a><a href="cabinet.html">cabinet</a><a href="get_product.html">get_product</a><a href="news.html">news</a><a href="news_full.html">news_full</a><a href="product.html">product</a><a href="registration.html">registration </a></div>
   <!--Include scripts-->
   <script src="js/combined.js"></script>
   <script src="js/script.js"></script>

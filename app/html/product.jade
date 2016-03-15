@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+html(lang="en")
+	//Include header
+	include ./block_html/head.jade
+	include ./block_html/const.jade
+body
+	
+	//Include Header
+	include ./block_html/header.jade
+	
+	//Content
+	.main-cont
+		.content
+			include ./block_html/breadcrumbs.jade
+			.part-title Кальян AGER 1251 RG74 см
+			.product-wraper
+				.product-left
+					.product-left-slide.owl-carousel
+						img(src="img/product-1.jpg", alt="")
+						img(src="img/product-1.jpg", alt="")
+						img(src="img/product-1.jpg", alt="")
+
+				.product-right
+					.product-right-title 
+						.product-right-title-text Кальян AGER 1251 RG74 см
+						.product-right-title-rating.star-rating
+							i.fa.fa-star.active-star
+							i.fa.fa-star.active-star
+							i.fa.fa-star.active-star
+							i.fa.fa-star
+							i.fa.fa-star
+					//Price
+					.product-right-price
+						.product-right-price-info
+							.product-right-price-row
+								.product-right-price-row-text от 10 шт
+								.product-right-price-row-val 3 525 руб
+							.product-right-price-row
+								.product-right-price-row-text от 10 шт
+								.product-right-price-row-val 3 525 руб
+						.product-right-price-isset
+							.product-right-price-isset-text Этот товар в наличии
+							.product-right-price-isset-val 
+								.product-right-howmuch.product-right-howmuch-true
+								.product-right-howmuch.product-right-howmuch-true
+								.product-right-howmuch
+							.product-right-price-isset-number более 20 шт
+
+					//Count
+					.product-right-count
+						.product-right-count-left
+							.product-right-count-left-title Количество
+							.product-right-number
+								span.minus 
+									i.fa.fa-angle-left
+								input(type='text', value='0', size='1')
+								span.plus
+									i.fa.fa-angle-right
+							.product-right-count-left-text на сумму <span class="mark">10 000 руб.</span>
+							
+						.product-right-count-right
+							a(href="#").product-right-count-righ-sayme.hiden Сообщить о поступлении 
+							a(href="#").product-right-count-right-basket В корзину
+							a(href="#").product-right-count-right-baynow Купить сейчас
+					
+					//Social
+					.product-right-soc
+						.cabinet-tab-liked-left-soc
+							i.fa.fa-facebook
+							i.fa.fa-vk
+							i.fa.fa-twitter
+							i.fa.fa-google-plus
+							i.fa.fa-youtube
+							i.fa.fa-instagram
+						.product-right-soc-liked 
+							i.fa.fa-star
+							a(href="#") в Избранное
+
+			.product-tab 
+				//product selector
+				ul
+					li 
+						a(href="#product-tab-1") Описание 
+					li 
+						a(href="#product-tab-2") Отзывы
+					li 
+						a(href="#product-tab-3") Аналоги
+					li 
+						a(href="#product-tab-4") Аксессуары
+
+				//product tab-el
+				.product-tab-el#product-tab-1.product-dicr
+					.product-dicr-title Описание
+					.product-dicr-wraper
+						.product-dicr-info
+							mixin product(name,text)
+									.product-dicr-info-row
+										.product-dicr-info-name #{name}
+										.product-dicr-info-val #{text}
+
+							+product('Бренд','AGER')
+							+product('Цвет','Красный')
+							+product('Высота','74 см')
+							+product('Материал','Стекло')
+						
+						.product-dicr-text
+							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium incidunt, blanditiis. Consectetur odio repudiandae veritatis quo non alias corporis libero minus, labore est mollitia quaerat magnam aliquam eaque, obcaecati.
+							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium incidunt, blanditiis. Consectetur odio repudiandae veritatis quo non alias corporis libero minus, labore est mollitia quaerat magnam aliquam eaque, obcaecati.
+				
+				//product tab-el
+				.product-tab-el#product-tab-2.product-dicr
+					.product-dicr-title Отзывы
+					- for (var b = 0; b < 3; b++)
+						.product-review-el
+							.product-review-el-img
+								img(src="img/avatar.jpg", alt="")
+							.product-review-el-info
+								.product-review-el-info-name Галина Ивановна
+								.product-review-el-info-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi minus velit quas, cumque officiis earum laboriosam ipsum nesciunt repudiandae labore totam maiores sequi rerum, officia, veritatis voluptas asperiores animi! Praesentium mollitia aut reprehenderit recusandae cupiditate. Sapiente dicta ipsa totam voluptatem!
+								.product-review-el-info-bottom
+									a(href="#").product-review-el-info-answer Ответить
+									.product-review-el-info-like
+										i.fa.fa-heart
+
+				//product tab-el
+				.product-tab-el#product-tab-3.product-analog
+					.product-dicr-title Аналоги
+					.analog-card-wraper
+						- for (var d = 0; d < 8; d++)
+							.analog-card-el
+								.analog-card-view
+									.analog-card-view-sale
+										img(src="img/icon-percent.png", alt="")
+									.analog-card-reiting
+										.star-rating
+											i.fa.fa-star.active-star
+											i.fa.fa-star.active-star
+											i.fa.fa-star.active-star
+											i.fa.fa-star
+											i.fa.fa-star
+									.analog-card-img
+										img(src="img/product-1.jpg", alt="")
+									.analog-card-name Кальян Ager 1251rg 74 см
+								a(href="#").analog-card-review отзывы(12)
+								a(href="#").analog-card-but
+									.analog-card-price 3525 руб.
+									.analog-card-getText в корзину
+
+				//product tab-el
+				.product-tab-el#product-tab-4.product-accessory
+					.product-dicr-title Аксессуары
+					.analog-card-wraper
+						- for (var d = 0; d < 8; d++)
+							.analog-card-el
+								.analog-card-view
+									.analog-card-view-sale
+										img(src="img/icon-percent.png", alt="")
+									.analog-card-reiting
+										.star-rating
+											i.fa.fa-star.active-star
+											i.fa.fa-star.active-star
+											i.fa.fa-star.active-star
+											i.fa.fa-star
+											i.fa.fa-star
+									.analog-card-img
+										img(src="img/product-1.jpg", alt="")
+									.analog-card-name Кальян Ager 1251rg 74 см
+								a(href="#").analog-card-review отзывы(12)
+								a(href="#").analog-card-but
+									.analog-card-price 3525 руб.
+									.analog-card-getText в корзину
+
+			.product-recomend-wrap
+				.title.title-border К этому товару мы рекомендуем 
+				.analog-card-wraper
+					- for (var d = 0; d < 4; d++)
+						.analog-card-el
+							.analog-card-view
+								.analog-card-view-sale
+									img(src="img/icon-percent.png", alt="")
+								.analog-card-reiting
+									.star-rating
+										i.fa.fa-star.active-star
+										i.fa.fa-star.active-star
+										i.fa.fa-star.active-star
+										i.fa.fa-star
+										i.fa.fa-star
+								.analog-card-img
+									img(src="img/product-1.jpg", alt="")
+								.analog-card-name Кальян Ager 1251rg 74 см
+							a(href="#").analog-card-review отзывы(12)
+							a(href="#").analog-card-but
+								.analog-card-price 3525 руб.
+								.analog-card-getText в корзину
+
+
+	//Include footer
+	include ./block_html/footer.jade
+
+	//Include scripts
+	include ./block_html/script.jade

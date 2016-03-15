@@ -13,7 +13,8 @@ jeet.gutter = 2
 .main-cont
 	center(968px)
 	padding 5px
-
+textarea
+	resize: none
 a
 	text-decoration none
 ul
@@ -48,7 +49,7 @@ input,textarea
 	justify-content flex-end
 	
 .header-wraper
-	+below(480px)
+	+below(768px)
 		flex-wrap wrap
 		flex(mid)
 		height auto
@@ -58,7 +59,7 @@ input,textarea
 	height 110px
 //.main-cont
 .header-basket-inf-wrap
-	+below(460px)
+	+below(768px)
 		width 100%
 		flex-wrap no-wrap
 .header-logo
@@ -66,8 +67,8 @@ input,textarea
 		width 100%
 	flex(mid)
 .header-contact
-	+below(760px)
-		margin 20px
+	+below(768px)
+		margin 10px
 		.header-contact-phone,
 		.header-contact-email
 			font-size 24px
@@ -87,7 +88,7 @@ input,textarea
 	flex-flow column
 	height 100%
 .header-contact-phone
-	+below(760px)
+	+below(768px)
 		font-size 16px
 	color #364657
 	font-family Arial
@@ -95,7 +96,7 @@ input,textarea
 	font-weight 700
 	line-height 16px
 .header-contact-email
-	+below(760px)
+	+below(768px)
 		font-size 16px
 	color #364657
 	font-family Arial
@@ -103,8 +104,13 @@ input,textarea
 	font-weight 700
 	line-height 16px
 .header-nav
-	+below(760px)
-		display none
+	+below(768px)
+		width 60%!important
+		flex-flow row
+	+below(480px)
+		width 100%!important
+		a
+			font-size 11px
 	flex(between)
 	flex-flow column
 	height 100%
@@ -168,9 +174,7 @@ input,textarea
 	line-height 16px
 	color grey-text
 .header-wraper-el
-	+below(760px)
-		width 33% 
-	+below(480px)
+	+below(768px)
 		width 100%
 	width 25%
 	height 100%
@@ -183,7 +187,7 @@ input,textarea
 	flex(mid)
 	flex-flow column
 .header-basket-inf-wrap-el
-	+below(480px)
+	+below(768px)
 		flex(between)
 		width 70%
 	+below(380px)
@@ -191,7 +195,7 @@ input,textarea
 		.bold-text
 			font-size 12px
 .header-basket-inf-wrap
-	+below(480px)
+	+below(768px)
 		width 100%
 		flex(mid)
 		flex-wrap no-wrap
@@ -205,7 +209,7 @@ input,textarea
 	
 //.menu-cat
 .menu-cat-product
-	+below(760px)
+	+below(768px)
 		order 2
 		width 50%
 		padding 15px
@@ -219,7 +223,7 @@ input,textarea
 	position relative
 	&:hover
 		cursor pointer
-	+below(760px)
+	+below(768px)
 		order 3
 		width 50%
 		padding 15px
@@ -235,7 +239,7 @@ input,textarea
 	flex(mid)
 	background yellow
 .menu-cat-search
-	+below(760px)
+	+below(768px)
 		width 100%
 		order 1
 		padding 10px
@@ -263,15 +267,15 @@ input,textarea
 //.menu-cat-want-text
 
 .menu-cat-wrap
-	+below(760px)
+	+below(768px)
 		flex-wrap wrap
 		height auto
 		margin-bottom 0
 	display flex
 	height 55px
-	margin-bottom 20px
+	margin-bottom 10px
 .menu-cat-search-wrap
-	+below(760px)
+	+below(768px)
 		width 90%
 	width 80%
 	position relative
@@ -284,13 +288,13 @@ input,textarea
 //.main-cont
 //.footer-wrap
 .footer-head
-	+below(760px)
+	+below(768px)
 		flex-wrap wrap
 	//height 145px
 	flex(mid)
 	padding 20px 0
 .footer-head-el
-	+below(760px)
+	+below(768px)
 		&:nth-child(1)
 			width 100%
 			margin-bottom 20px
@@ -337,7 +341,7 @@ input,textarea
 	font-weight 700
 	line-height 16px
 .footer-contact-info-pay
-	+below(760px)
+	+below(768px)
 		width 100%
 		flex(mid)
 		margin-top 15px
@@ -347,7 +351,7 @@ input,textarea
 	img
 		margin-left 20px
 .footer-contact-soc
-	+below(760px)
+	+below(768px)
 		flex(mid)
 		flex-wrap wrap
 		flex-flow column
@@ -366,12 +370,12 @@ input,textarea
 		width 30px
 		text-align center
 .footer-contact-soc-left
-	+below(760px)
+	+below(768px)
 		width 100%
 		margin 10px
 		flex(mid)
 .footer-contact-soc-right
-	+below(760px)
+	+below(768px)
 		width 100%
 		flex(mid)
 	+below(480px)
@@ -415,7 +419,7 @@ input,textarea
 		left 15px
 		margin-top -8px
 	&:before
-		+below(760px)
+		+below(768px)
 			display none
 		content ''
 		width: 0
@@ -465,7 +469,7 @@ input,textarea
 			content ''
 			border 0px!important
 .menu-cat-product-sub
-	+below(760px)
+	+below(768px)
 		//display none!important
 	position absolute
 	top 55px
@@ -523,7 +527,7 @@ input,textarea
 	margin-bottom 10px
 	font-weight 400
 .easytree-container
-	+below(760px)
+	+below(768px)
 		width 100%
 		margin-bottom 20px
 		.easytree-title
@@ -545,11 +549,11 @@ input,textarea
 	+below(960px)
 		font-size 12px
 .main-left
-	+below(760px)
+	+below(768px)
 		col(1)
 	col(0.22)
 .main-right
-	+below(760px)
+	+below(768px)
 		col(1)
 		padding-left 0
 	col(0.78)
@@ -592,7 +596,7 @@ ul.easytree-container ul
 	
 //.main-left-review
 .main-left-review-el
-	+below(760px)
+	+below(768px)
 		col(1/3)
 		border-bottom 1px solid #DEDEDE!important
 	margin-bottom 15px
@@ -672,7 +676,7 @@ ul.easytree-container ul
 	flex-flow column
 	background yellow
 .product-card-price
-	+below(760px)
+	+below(768px)
 		font-size 18px
 	color black
 	font-family Arial
@@ -1211,7 +1215,7 @@ ul.easytree-container ul
 
 .r-tabs .r-tabs-panel
 	+below(680px)
-		padding 20px 0!important
+		padding 20px 5px!important
 
 .hiden
 	display none
@@ -1456,6 +1460,7 @@ ul.easytree-container ul
 		margin-left 0
 		
 .menu-cat-want-text-wrap
+	z-index 2000
 	+below(1100px)
 		width 100%
 	+below(768px)
@@ -2036,3 +2041,951 @@ ul.easytree-container ul
 	width 100%
 	border 1px solid #eee
 	margin-bottom 20px
+	
+//.news-wrap
+.news-wrap-el
+	display flex
+	padding 10px 0
+	border-top 1px solid #eee
+	margin-bottom 20px
+	flex-wrap wrap
+.news-el-img
+	+below(640px)
+		width 100%
+		padding 10px 0
+	padding 10px
+	width 30%
+	padding-top 0
+.news-el-info
+	+below(680px)
+		width 100%
+	width 70%
+.news-el-info-title
+	color black
+	font-family Arial
+	font-size 18px
+	font-weight 400
+	margin-bottom 10px
+.news-el-info-text
+	color #364657
+	font-family Arial
+	font-size 14px
+	font-weight 400
+	margin-bottom 10px
+.news-el-info-bottom
+	flex(between)
+	flex-wrap wrap
+.news-el-info-bottom-comments
+	+below(680px)
+		width 100%
+	color #9d9d9d
+	font-family Arial
+	font-size 13px
+	font-weight 700
+	text-decoration underline
+.news-el-info-bottom-more
+	+below(680px)
+		width 100%
+		margin 5px 0px
+		a
+			text-align left!important
+	a
+		color #9d9d9d
+		font-family Arial
+		font-size 13px
+		font-weight 700
+		text-decoration underline
+		text-align right
+		margin-bottom 5px
+	display flex
+	flex-flow column
+.news-el-teg
+	display flex
+	align-items center
+	.bold
+		color #9d9d9d
+		font-family Arial
+		font-size 13px
+		font-weight 700
+		margin-right 20px
+.news-el-teg-el
+	color white
+	padding 3px 10px
+	background-color #98c3d9
+	margin-left 5px
+	font-family Arial
+	font-size 13px
+	font-weight 700
+	
+.main-left-menu-news
+	.easytree-title
+		width 80%
+	+below(768px)
+		.easytree-container ul .easytree-title
+			color white!important
+
+
+.cabinet-tab-liked-left-soc
+	+below(960px)
+		flex(mid)
+		flex-wrap wrap
+	flex(between)
+	.fa
+		+below(768px)
+			margin-right 3px
+		color #A8D3E3
+		margin-right 10px
+		border 1px solid #A8D3E3
+		border-radius 50%
+		font-size 14px
+		line-height 24px
+		height 25px
+		width 25px
+		text-align center
+		&:last-child
+			margin-right 0
+
+.product-wraper
+	+below(768px)
+		height auto
+	display flex
+	flex-wrap wrap
+	height 350px
+.product-left
+	width 50%
+	height 100%
+//.product-left-img
+.product-left-img-small
+	width 30%
+	display flex
+	flex-wrap wrap
+	height 50%
+.product-left-img-small-el
+	height 100%
+	border 1px solid #eee
+	width 100%
+	flex(mid)
+	img
+		width 80%
+.product-left-img-big
+	flex(mid)
+	border 1px solid #eee
+	img
+		height 100%
+	width 68%
+	margin-left 2%
+//.product-left-img-el
+.product-right
+	+below(768px)
+		width 100%
+		padding-left 0
+	width 50%
+	padding-left 20px
+.product-right-title
+	flex(between)
+	padding-bottom 10px
+	border-bottom 1px solid #eee
+	margin-bottom 20px
+.product-right-title-text
+	+below(768px)
+		font-size 12px
+	color black
+	font-family Arial
+	font-size 16px
+	font-weight 700
+	line-height 16px
+//.product-right-title-rating
+.product-right-price
+	display flex
+	margin-bottom 30px
+.product-right-price-info
+	display flex
+	flex-flow column
+	width 50%
+.product-right-price-row
+	flex(between)
+	margin-bottom 20px
+.product-right-price-row-text
+	color #b4b4b4
+	font-family Arial
+	font-size 12px
+	font-weight 700
+	line-height 16px
+.product-right-price-row-val
+	+below(768px)
+		font-size 16px
+	color black
+	font-family Arial
+	font-size 20px
+	font-weight 700
+	line-height 19px
+.product-right-price-isset
+	width 50%
+	display flex
+	flex-flow column
+	align-items flex-end
+.product-right-price-isset-text
+	+below(768px)
+		font-size 10px
+	color #b4b4b4
+	font-family Arial
+	font-size 12px
+	font-weight 700
+	line-height 16px
+	text-transform uppercase
+.product-right-price-isset-val
+	display flex
+.product-right-howmuch
+	width 20px
+	height 20px
+	background main-color
+	margin 5px 0
+	margin-right 3px
+.product-right-price-isset-number
+	color #b4b4b4
+	font-family Arial
+	font-size 12px
+	font-weight 700
+	line-height 16px
+.product-right-howmuch-true
+	background yellow
+	border-top 2px solid main-color
+.product-right-count
+	display flex
+.product-right-count-left
+	+below(768px)
+		width 50%
+		margin-right 5px
+	width 40%
+	margin-right 10%
+	padding 10px
+	flex(mid)
+	flex-flow column
+	border 1px solid #eee
+.product-right-count-left-title
+	color #898989
+	font-family Arial
+	font-size 13px
+	font-weight 400
+.product-right-count-left-text
+	+below(768px)
+		font-size 10px
+	font-family Arial
+	font-size 13px
+	font-weight 400
+	color #898989
+	.mark
+		color #98c3d9
+.product-right-count-right
+	flex(mid)
+	flex-flow column
+	width 50%
+.product-right-count-right-basket
+	text-align center
+	width 100%
+	color black
+	font-family Arial
+	font-size 14px
+	font-weight 700
+	line-height 19px
+	text-transform uppercase
+	background yellow
+	margin-bottom 5px
+	padding 15px 0
+.product-right-count-right-baynow
+	padding 15px 0
+	text-align center
+	width 100%
+	color white
+	font-family Arial
+	font-size 14px
+	font-weight 700
+	line-height 19px
+	text-transform uppercase
+	background main-color
+.product-right-soc
+	flex(between)
+	margin-top 40px
+//.cabinet-tab-liked-left-soc
+.product-right-soc-liked
+	i
+		margin-right 10px
+		color main-color
+	a
+		color #b4b4b4
+		font-family Arial
+		font-size 12px
+		font-weight 700
+		line-height 16px
+		text-decoration underline
+//.fa-star
+
+.product-right-number
+	flex(mid)
+	margin 10px 0px
+	input
+		border 1px solid #eee
+		text-align center
+		width 30px
+		height 30px
+
+.product-right-count-righ-sayme
+	color #98c3d9
+	font-family Arial
+	font-size 12px
+	font-weight 700
+	line-height 16px
+	text-decoration underline
+	text-align center
+	width 50%
+	text-transform uppercase
+	
+.product-tab
+	margin-top 30px
+	.r-tabs-nav
+		padding 10px
+		flex(between)
+		background #F8F8F8
+		//margin-bottom 20px
+	li.r-tabs-state-active
+		background #83C4DB
+		a
+			color white
+	.r-tabs-tab
+		padding 10px 0
+		width 100%
+	.r-tabs-nav
+		a
+			color #898989
+			font-family Arial
+			font-size 20px
+			font-weight 400
+			text-align center
+			width 100%
+			display inline-block
+	+below(768px)
+		ul.r-tabs-nav
+			display none
+.product-order-title
+	color #364657
+	font-family Arial
+	font-size 18px
+	font-weight 700
+	line-height 16px
+	text-transform uppercase
+	margin 10px
+	margin-bottom 20px
+	
+.product-tab
+		border 1px solid #eee!important
+.product-dicr-title
+	padding-bottom 20px
+	border-bottom 1px solid #eee
+	color #364657
+	font-family Arial
+	font-size 18px
+	font-weight 700
+	line-height 16px
+	margin-bottom 20px
+.product-dicr-wraper
+	display flex
+	flex-wrap wrap
+	
+.product-dicr-info
+	+below(768px)
+		width 100%
+	display flex
+	align-items center
+	flex-flow column
+	width 40%
+.product-dicr-info-row
+	+below(768px)
+		width 100%
+	flex(between)
+	width 60%
+	margin-bottom 10px
+.product-dicr-info-name
+	color #364657
+	font-family Arial
+	font-size 20px
+	font-weight 400
+.product-dicr-info-val
+	color #898989
+	font-family Arial
+	font-size 18px
+	font-weight 400
+.product-dicr-text
+	+below(768px)
+		width 100%
+	width 60%
+	p
+		color #364657
+		font-family Arial
+		font-size 15px
+		font-weight 400
+		margin 0
+		margin-bottom 10px
+		
+.product-review-el
+	display flex
+	margin-bottom 20px
+.product-review-el-img
+	+below(768px)
+		width 20%
+	width 10%
+	margin-right 20px
+.product-review-el-info
+	+below(768px)
+		width 80%
+	width 90%
+.product-review-el-info-name
+	color #898989
+	font-family Arial
+	font-size 18px
+	font-weight 400
+	margin-bottom 10px
+.product-review-el-info-text
+	color #364657
+	font-family Arial
+	font-size 15px
+	font-weight 400
+	margin-bottom 10px
+.product-review-el-info-bottom
+	flex(between)
+.product-review-el-info-answer
+	color #9d9d9d
+	font-family Arial
+	font-size 13px
+	font-weight 700
+	text-decoration underline
+.product-review-el-info-like
+	color #9d9d9d
+	&:hover
+		cursor pointer
+		
+.analog-card-wraper
+	margin-bottom 10px
+	cf()
+.analog-card-el
+	col(1/4,cycle:4)
+	+below(780px)
+		col(1/2, uncycle: 3,cycle:2)
+	//+below(380px)
+		//col(1, uncycle: 2,cycle:1)
+	margin-bottom 30px
+.analog-card-view
+	padding 10px
+	border 3px solid yellow
+//.analog-card-reiting
+.analog-card-img
+	img
+		+below(380px)
+			width 80%
+		display block
+		margin 0 auto
+		width 100%
+.analog-card-name
+	font-size 16px
+	font-weight 700
+	line-height 16px
+	text-align center
+.analog-card-review
+	+below(480px)
+		width 100%
+		text-align center
+		font-size 16px
+		font-weight 400
+	color #9d9d9d
+	font-family Arial
+	font-size 10px
+	font-weight 700
+	line-height 19px
+	text-decoration underline
+	margin 5px 0
+	display inline-block
+.analog-card-but
+	padding 10px
+	flex(mid)
+	flex-flow column
+	background yellow
+.analog-card-price
+	+below(768px)
+		font-size 14px
+	color black
+	font-family Arial
+	font-size 12px
+	font-weight 700
+	line-height 19px
+.analog-card-getText
+	color black
+	font-family Arial
+	font-size 14px
+	font-weight 700
+	line-height 19px
+	text-transform uppercase
+.analog-card-view
+	+below(680px)
+		.fa-star
+			font-size 14px!important
+		.analog-card-name
+			font-size 12px
+		
+	position relative
+.analog-card-view-sale
+	img
+		+below(768px)
+			z-index 200
+	position absolute
+	top -10px
+	right -5px
+.product-left-slide
+	width 50%
+	position relative
+	img
+		width 50%
+		height 100%!important
+	.owl-prev,
+	.owl-next
+		+below(640px)
+			margin-top -40px
+		position absolute
+		top 50%
+		margin-top -60px
+	.owl-prev
+		left -20%
+	.owl-next
+		right -20%
+	.fa
+		font-size 68px
+		color main-color
+.product-left
+	+below(768px)
+		width 100%
+	flex(mid)
+	
+.product-recomend-wrap
+	margin 40px 0
+	
+.header-basket-top-register
+	flex-wrap wrap
+	.header-basket-reg
+		text-decoration none
+	.header-basket-reg
+		margin-right 0
+		width 100%
+		text-align center
+		margin-bottom 5px
+		&:after
+			content ''
+			
+.footer-page
+	flex(around)
+	flex-wrap wrap
+	a
+		color grey
+		padding 20px 0
+		
+
+.breadcrumbs-block
+	display flex
+	margin-bottom 15px
+	flex-wrap wrap
+.breadcrumbs-block-el
+	font-family Arial
+	font-size 14px
+	font-weight 400
+	line-height 20px
+	color #898989
+	margin-right 16px
+	text-decoration underline
+	position relative
+	&:after
+		content '>'
+		position absolute
+		right -12px
+	&:last-child
+		text-decoration none
+		color #98c3d9
+		&:after
+			content ''
+
+//.catalog-block
+	
+.catalog-block-el
+	col(1/3,cycle:3)
+	+below(768px)
+		col(1/2,cycle:2,uncycle:3)
+	
+	border 1px solid yellow
+	margin-bottom 20px
+	padding 20px
+	flex(mid)
+	flex-flow column
+	max-height 180px
+//.catalog-block-el-img
+
+.catalog-block-el-text
+	flex(mid)
+	margin-top 20px
+.catalog-block-el-title
+	+below(768px)
+		font-size 12px
+	margin-right 20px
+	color black
+	font-family Arial
+	font-size 16px
+	font-weight 700
+	line-height 16px
+	text-align center
+.catalog-block-el-number
+	color #f6dd34
+	font-family Arial
+	font-size 16px
+	font-weight 400
+	line-height 16px
+	padding 5px 
+	background-color #98c3d9
+	position relative
+	&:before
+		content ''
+		position absolute
+		left -13px
+		top 0px
+		triangle:"left" 13px #98c3d9
+		
+.main-left-sort
+	padding 10px
+	border 1px solid #eee
+	margin-bottom 10px	
+.main-left-sort-title
+	+below(768px)
+		.fa
+			display inline-block!important
+			margin-left 30px
+		&:hover
+			cursor pointer
+	.fa
+		display none
+	color #898989
+	font-family Arial
+	font-size 15px
+	font-weight 400
+	text-align center
+.main-left-sort-el
+	+below(640px)
+		width 50%
+	margin-bottom 20px
+	label
+		color #898989
+		font-family Arial
+		font-size 13px
+		font-weight 400
+		margin-right 5px
+.main-left-sort-el-title
+	color #364657
+	font-family Arial
+	font-size 15px
+	font-weight 400
+	margin-bottom 5px
+.main-left-sort-input
+	margin-bottom 5px
+	
+.srotby-block
+	+below(768px)
+		flex(mid)
+	background-color #f8f8f8
+	padding 10px
+	flex(between)
+	flex-wrap wrap
+.srotby-block-left
+	color #898989
+	font-family Arial
+	font-size 15px
+	font-weight 400
+.srotby-block-type
+	+below(768px)
+		flex(mid)
+		flex-wrap wrap
+		margin 10px 0px
+	flex(between)
+.srotby-block-type-el
+	+below(768px)
+		margin-bottom 10px	
+	color #898989
+	font-family Arial
+	font-size 10px
+	font-weight 400
+	text-transform uppercase
+	margin-right 20px
+	padding 5px
+.srotby-block-type-active
+	color white
+	background-color #98c3d9
+.srotby-block-left-icon
+	flex(mid)
+.srotby-block-left-icon-el
+	margin-right 10px
+	padding 5px 3px
+.srotby-block-left-icon-active
+	border 1px solid #98c3d9
+	background white
+.main-left-sort-wraper
+	margin-top 20px	
+	+below(768px)
+		flex(between)
+		flex-wrap wrap
+.main-left-sort-block
+	display none
+	+above(768px)
+		display block!important
+	
+.modal-registration
+	border-radius 5px
+	hr
+		border 0px
+		border-bottom 1px solid #eee
+		margin-bottom 20px
+.modal-wraper
+	+below(960px)
+		width 80%
+	display none
+	width 60%
+	background white
+	padding 20px
+	position relative
+.modal-close
+	position absolute
+	top -10px
+	right -5px
+	font-size 30px
+	color grey
+	&:hover
+		cursor pointer
+		
+//.modal-close
+//.fa-times-circle
+//.modal-registration-wraper
+.modal-registration-title
+	+below(680px)
+		flex-wrap wrap
+	display flex
+	margin-bottom 20px
+	a
+		+below(680px)
+			width 100%
+			text-align center
+			margin-top 10px
+		color #98c3d9
+		font-family Arial
+		font-size 15px
+		font-weight 400
+		text-decoration underline
+.modal-registration-title-text
+	+below(680px)
+		margin-left 0
+	color #364657
+	font-family Arial
+	font-size 20px
+	font-weight 400
+	text-transform uppercase
+	width 100%
+	text-align center
+	margin-left 15%
+.modal-registration-input
+	flex(between)
+	margin-bottom 20px
+	flex-wrap wrap
+	input
+		+below(680px)
+			width 100%
+		padding 5px 10px
+		border 1px solid #eee
+		width 48%
+.modal-registration-remember
+	flex(mid)
+	label
+		margin-left 10px
+		color #b4b4b4
+		font-family Arial
+		font-size 12px
+		font-weight 700
+		line-height 16px
+		text-align center
+.modal-registration-but
+	flex(mid)
+	button
+		border 0px
+		color white
+		padding 5px 20px
+		background-color #98c3d9
+		margin 10px 0
+.modal-registration-but-text
+	color #b4b4b4
+	font-family Arial
+	font-size 12px
+	font-weight 700
+	line-height 16px
+	text-align center
+	margin-bottom 20px
+	a
+		color #b4b4b4
+		font-family Arial
+		font-size 12px
+		font-weight 700
+		line-height 16px
+		text-decoration underline
+.modal-registration-soc
+	flex(around)
+	flex-wrap wrap
+.modal-registration-soc-text
+	+below(680px)
+		text-align center
+		margin-bottom 10px
+	color #898989
+	font-family Arial
+	font-size 18px
+	font-weight 400
+.modal-registration-soc-el
+	+below(960px)
+		flex(mid)
+		flex-wrap wrap
+	flex(between)
+	.fa
+		+below(768px)
+			margin-right 3px
+		color #A8D3E3
+		margin-right 10px
+		border 1px solid #A8D3E3
+		border-radius 50%
+		font-size 14px
+		line-height 24px
+		height 25px
+		width 25px
+		text-align center
+		&:last-child
+			margin-right 0
+
+.search-news-el
+	margin-bottom 20px
+.search-news-el-title
+	color #364657
+	font-family Arial
+	font-size 18px
+	font-weight 700
+	line-height 16px
+	padding-bottom 10px
+	margin-bottom 10px
+	border-bottom 1px solid #eee
+.search-news-el-text
+	color #364657
+	font-family Arial
+	font-size 15px
+	font-weight 400
+
+.modal-product
+	display none
+	.owl-nav
+		flex(between)
+.modal-wraper.modal-product
+	top 10%!important
+.modal-card-wraper
+	margin-bottom 10px
+	cf()
+.modal-card-el
+	m
+	+below(480px)
+		width 100%
+	margin-bottom 10px
+.modal-card-view
+	padding 10px
+	border 3px solid yellow
+	position relative
+//.modal-card-reiting
+.modal-card-img
+	img
+		+below(480px)
+			width 60%!important
+		display block
+		margin 0 auto
+		width 100%
+.modal-card-name
+	+below(768px)
+		font-size 12px
+	font-size 16px
+	font-weight 700
+	line-height 16px
+	text-align center
+.modal-card-review
+	+below(480px)
+		width 100%
+		text-align center
+		font-size 12px
+		font-weight 400
+	color #9d9d9d
+	font-family Arial
+	font-size 10px
+	font-weight 700
+	line-height 19px
+	text-decoration underline
+	margin 5px 0
+	display inline-block
+.modal-card-but
+	padding 10px
+	flex(mid)
+	flex-flow column
+	background yellow
+.modal-card-price
+	+below(768px)
+		font-size 14px
+	color black
+	font-family Arial
+	font-size 12px
+	font-weight 700
+	line-height 19px
+.modal-card-getText
+	color black
+	font-family Arial
+	font-size 14px
+	font-weight 700
+	line-height 19px
+	text-transform uppercase
+
+.modal-card-bottom
+	flex(between)
+	flex-wrap wrap
+	label
+		color #b4b4b4
+		font-family Arial
+		font-size 12px
+		font-weight 700
+		line-height 16px
+		margin-left 5px
+.modal-card-check
+	flex(mid)
+	flex-wrap wrap
+	
+.modal-card-view-close
+	position absolute
+	top 10px
+	right 10px
+	.fa
+		color grey
+		
+.modal-product-title
+	color #364657
+	font-family Arial
+	font-size 20px
+	font-weight 400
+	text-transform uppercase
+	text-align center
+	margin-bottom 20px
+	
+.modal-product-nav
+	flex(between)
+.modal-product-nav-el
+	color #9d9d9d
+	font-family Arial
+	font-size 15px
+	font-weight 700
+	line-height 19px
+	text-decoration underline
