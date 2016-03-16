@@ -124,25 +124,26 @@ body
 						include ./block_html/pagination.jade
 
 						.cabinet-order-review
-							.cabinet-order-review-title Написать отзыв о работе магазина
-							.cabinet-order-review-top
-								.cabinet-order-review-top-left
-									label Оценка
-									.cabinet-order-review-rating.star-rating
-										i.fa.fa-star.active-star
-										i.fa.fa-star.active-star
-										i.fa.fa-star.active-star
-										i.fa.fa-star
-										i.fa.fa-star
-								.cabinet-order-review-top-right
-									label Номер заказа
-									input(type="text").cabinet-order-review-number
+							form(action="")
+								.cabinet-order-review-title Написать отзыв о работе магазина
+								.cabinet-order-review-top
+									.cabinet-order-review-top-left
+										label Оценка
+										.cabinet-order-review-rating.star-rating
+											i.fa.fa-star.active-star
+											i.fa.fa-star.active-star
+											i.fa.fa-star.active-star
+											i.fa.fa-star
+											i.fa.fa-star
+									.cabinet-order-review-top-right
+										label Номер заказа
+										input(type="text").cabinet-order-review-number
 							
-							.cabinet-order-review-text
-									label Ваш отзыв
-									textarea(name="", rows="5")
-							.cabinet-order-review-footer
-								a(href="#").cabinet-order-review-but.button-block Отправить
+								.cabinet-order-review-text
+										label Ваш отзыв
+										textarea(name="", rows="5")
+								.cabinet-order-review-footer
+									a(href="#").cabinet-order-review-but.button-block Отправить
 
 					//cabinet tab-el
 					.cabinet-tab-el#about-tab-5.about-contact
@@ -164,9 +165,9 @@ body
 							p <span class="bold">Как добраться:</span>
 							
 							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente corporis praesentium doloribus maxime magni magnam repellendus minima repudiandae eligendi quibusdam, nemo, molestias animi vero labore reiciendis obcaecati paria
-
+	
 	//Include footer
 	include ./block_html/footer.jade
-
+	
 	//Include scripts
 	include ./block_html/script.jade

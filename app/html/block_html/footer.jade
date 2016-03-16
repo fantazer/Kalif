@@ -32,12 +32,18 @@
 						img(src="img/icon-pay-#{x+1}.png", alt="")
 			.footer-contact-soc
 				.footer-contact-soc-left
-					i.fa.fa-facebook
-					i.fa.fa-vk
-					i.fa.fa-twitter
-					i.fa.fa-google-plus
-					i.fa.fa-youtube
-					i.fa.fa-instagram
+					a(href="#")
+						i.fa.fa-facebook
+					a(href="#")
+						i.fa.fa-vk
+					a(href="#")
+						i.fa.fa-twitter
+					a(href="#")
+						i.fa.fa-google-plus
+					a(href="#")
+						i.fa.fa-youtube
+					a(href="#")
+						i.fa.fa-instagram
 				.footer-contact-soc-right
 					- for (var y = 0; y < 7; y++)
 						img(src="img/icon-footer-#{y+1}.png", alt="")
@@ -53,6 +59,7 @@
 	a(href="sale.html") sale 
 	a(href="catalog.html") catalog 
 	a(href="search_news.html") search_news 
+	a(href="callback.html") callback
 
 //Modal registration
 .modal-wraper.modal-registration
@@ -62,25 +69,32 @@
 		.modal-registration-title
 			.modal-registration-title-text Авторизация
 			a(href="#") Регистрация
-		.modal-registration-input
-			input(type="text" placeholder="E-mail")
-			input(type="password" placeholder="Пароль")
-		.modal-registration-remember
-			input(type="checkbox")
-			label Запомнить меня на этом компьютере
-		.modal-registration-but
-			button.modal-registration-button Вход
-		.modal-registration-but-text Забыли свой пароль? Мы поможем его <a href=""> восстановить</a>
-		hr 
-		.modal-registration-soc
-			.modal-registration-soc-text Авторизация через соц.сети
-			.modal-registration-soc-el
-				i.fa.fa-facebook
-				i.fa.fa-vk
-				i.fa.fa-twitter
-				i.fa.fa-google-plus
-				i.fa.fa-youtube
-				i.fa.fa-instagram
+		form(action="")
+			.modal-registration-input
+				input(type="text" placeholder="E-mail")
+				input(type="password" placeholder="Пароль")
+			.modal-registration-remember
+				input(type="checkbox")
+				label Запомнить меня на этом компьютере
+			.modal-registration-but
+				button.modal-registration-button Вход
+			.modal-registration-but-text Забыли свой пароль? Мы поможем его <a href=""> восстановить</a>
+			hr 
+			.modal-registration-soc
+				.modal-registration-soc-text Авторизация через соц.сети
+				.modal-registration-soc-el
+					a(href="#")
+						i.fa.fa-facebook
+					a(href="#")
+						i.fa.fa-vk
+					a(href="#")
+						i.fa.fa-twitter
+					a(href="#")
+						i.fa.fa-google-plus
+					a(href="#")
+						i.fa.fa-youtube
+					a(href="#")
+						i.fa.fa-instagram
 
 //Modal broduct
 .modal-wraper.modal-product
@@ -101,7 +115,7 @@
 							i.fa.fa-star.active-star
 							i.fa.fa-star
 							i.fa.fa-star
-						.modal-card-img
+						a(href="#").modal-card-img
 							img(src="img/product-1.jpg", alt="")
 						.modal-card-name Кальян Ager 1251rg 74 см
 						a(href="#").modal-card-review отзывы(12)
@@ -110,3 +124,40 @@
 							.modal-card-check
 								input(type="checkbox")
 								label в Избранное
+
+//basket-commend
+.modal-wraper.basket-commend
+	.modal-close
+		i.fa.fa-times-circle
+	.modal-product-wraper
+		.modal-product-title Просмотренные товары
+		.basket-commend-top
+			.basket-commend-top-prod
+				.basket-commend-top-img
+					img(src="img/product-1.jpg", alt="")
+				.basket-commend-top-info
+					.basket-commend-top-name Кальян Ager 1251rg 74 см
+					.basket-commend-top-price 1500 руб.
+			.basket-commend-top-but
+				a(href="#").basket-commend-top-get Оформить покупку
+				a(href="#").basket-commend-top-back Вернуться к выбору
+		.basket-commend-text К этому товару рекомендуем
+		.modal-card-wraper.owl-carousel
+			- for (var d = 0; d < 6; d++)
+				.modal-card-el
+					.modal-card-view
+						.basket-commend-card-top
+							.basket-commend-card-top-text
+								.modal-card-name Кальян Ager 1251rg 74 см
+							.basket-commend-card-top-incr
+								span.minus 
+									i.fa.fa-angle-left
+								input(type='text', value='0', size='1')
+								span.plus
+									i.fa.fa-angle-right
+						a(href="").modal-card-img
+							img(src="img/product-1.jpg", alt="")
+					a(href="#").product-card-but
+						.product-card-price 3525 руб.
+						.product-card-getText в корзину
+						

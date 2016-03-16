@@ -32,13 +32,13 @@ body
 								.main-left-review-el-bot  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolore ducimus totam quibusdam ad eligendi voluptates quod aliquid quaerat. Incidunt!ASDASD
 
 			//Right-content
-			.main-right
+			.main-right 
 				.main-right-slider.owl-carousel
 					img(src="img/slider-1.png", alt="")
 					img(src="img/slider-1.png", alt="") 
 					img(src="img/slider-1.png", alt="") 
 				
-				.main-adv
+				.main-adv 
 					.main-adv-el
 						.main-adv-el-img
 							img(src="img/icon-service.jpg", alt="")
@@ -56,11 +56,16 @@ body
 				
 				.product-card-wraper
 					- for (var d = 0; d < 6; d++)
-						.product-card-el
+						// use class .card-percent .card-coil .card-commend .card-hit .card-lider for top icon
+						.product-card-el.card-coil
 							.product-card-view
-								.product-card-reiting
+								.product-card-reiting.star-rating
+									i.fa.fa-star.active-star
+									i.fa.fa-star.active-star
+									i.fa.fa-star.active-star
 									i.fa.fa-star
-								.product-card-img
+									i.fa.fa-star
+								a(href="#").product-card-img
 									img(src="img/product-1.jpg", alt="")
 								.product-card-name Кальян Ager 1251rg 74 см
 							a(href="#").product-card-review отзывы(12)
@@ -74,9 +79,13 @@ body
 					- for (var d = 0; d < 6; d++)
 						.product-card-el
 							.product-card-view
-								.product-card-reiting
+								.product-card-reiting.star-rating
+									i.fa.fa-star.active-star
+									i.fa.fa-star.active-star
+									i.fa.fa-star.active-star
 									i.fa.fa-star
-								.product-card-img
+									i.fa.fa-star
+								a(href="#").product-card-img
 									img(src="img/product-1.jpg", alt="")
 								.product-card-name Кальян Ager 1251rg 74 см
 							a(href="#").product-card-review отзывы(12)

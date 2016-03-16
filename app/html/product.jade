@@ -23,7 +23,7 @@ body
 				.product-right
 					.product-right-title 
 						.product-right-title-text Кальян AGER 1251 RG74 см
-						.product-right-title-rating.star-rating
+						.product-right-title-rating.star-rating  
 							i.fa.fa-star.active-star
 							i.fa.fa-star.active-star
 							i.fa.fa-star.active-star
@@ -66,15 +66,21 @@ body
 					//Social
 					.product-right-soc
 						.cabinet-tab-liked-left-soc
-							i.fa.fa-facebook
-							i.fa.fa-vk
-							i.fa.fa-twitter
-							i.fa.fa-google-plus
-							i.fa.fa-youtube
-							i.fa.fa-instagram
+							a(href="#")
+								i.fa.fa-facebook
+							a(href="#")
+								i.fa.fa-vk
+							a(href="#")
+								i.fa.fa-twitter
+							a(href="#")
+								i.fa.fa-google-plus
+							a(href="#")
+								i.fa.fa-youtube
+							a(href="#")
+								i.fa.fa-instagram
 						.product-right-soc-liked 
 							i.fa.fa-star
-							a(href="#") в Избранное
+							a(href="#") в Избранное 
 
 			.product-tab 
 				//product selector
@@ -121,6 +127,27 @@ body
 									a(href="#").product-review-el-info-answer Ответить
 									.product-review-el-info-like
 										i.fa.fa-heart
+					.cabinet-order-review
+						form(action="")
+							.cabinet-order-review-title Написать отзыв 
+							.cabinet-order-review-top
+								.cabinet-order-review-top-left
+									label Оценка
+									.cabinet-order-review-rating.star-rating
+										i.fa.fa-star.active-star
+										i.fa.fa-star.active-star
+										i.fa.fa-star.active-star
+										i.fa.fa-star
+										i.fa.fa-star
+								.cabinet-order-review-top-right
+									label Номер заказа
+									input(type="text").cabinet-order-review-number
+							
+							.cabinet-order-review-text
+									label Ваш отзыв
+									textarea(name="", rows="5")
+							.cabinet-order-review-footer
+								a(href="#").cabinet-order-review-but.button-block Отправить
 
 				//product tab-el
 				.product-tab-el#product-tab-3.product-analog
@@ -174,10 +201,8 @@ body
 				.title.title-border К этому товару мы рекомендуем 
 				.analog-card-wraper
 					- for (var d = 0; d < 4; d++)
-						.analog-card-el
+						.analog-card-el.card-percent
 							.analog-card-view
-								.analog-card-view-sale
-									img(src="img/icon-percent.png", alt="")
 								.analog-card-reiting
 									.star-rating
 										i.fa.fa-star.active-star

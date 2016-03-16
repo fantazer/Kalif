@@ -51,26 +51,27 @@ body
 							
 	
 						.cabinet-order-review
-							.cabinet-order-review-title Написать отзыв о работе магазина
-							.cabinet-order-review-top
-								.cabinet-order-review-top-left
-									label Оценка
-									.cabinet-order-review-rating.star-rating
-										i.fa.fa-star.active-star
-										i.fa.fa-star.active-star
-										i.fa.fa-star.active-star
-										i.fa.fa-star
-										i.fa.fa-star
-								.cabinet-order-review-top-right
-									label Номер заказа
-									input(type="text").cabinet-order-review-number
-							
-							.cabinet-order-review-text
-									label Ваш отзыв
-									textarea(name="", rows="5")
-							.cabinet-order-review-footer
-								a(href="#").cabinet-order-review-but.button-block Отправить
-
+							form(action="")
+								.cabinet-order-review-title Написать отзыв о работе магазина
+								.cabinet-order-review-top
+									.cabinet-order-review-top-left
+										label Оценка
+										.cabinet-order-review-rating.star-rating
+											i.fa.fa-star.active-star
+											i.fa.fa-star.active-star
+											i.fa.fa-star.active-star
+											i.fa.fa-star
+											i.fa.fa-star
+									.cabinet-order-review-top-right
+										label Номер заказа
+										input(type="text").cabinet-order-review-number
+								
+								.cabinet-order-review-text
+										label Ваш отзыв
+										textarea(name="", rows="5")
+								.cabinet-order-review-footer
+									a(href="#").cabinet-order-review-but.button-block Отправить
+	
 					//cabinet tab-el
 					.cabinet-tab-el#cabinet-tab-2.cabinet-tab-liked
 						.cabinet-tab-liked-wrap
@@ -82,12 +83,18 @@ body
 								.cabinet-tab-liked-left-but Удалить из списка избранного
 								.cabinet-tab-liked-left-but Поделиться в соц. сетях
 								.cabinet-tab-liked-left-soc
-									i.fa.fa-facebook
-									i.fa.fa-vk
-									i.fa.fa-twitter
-									i.fa.fa-google-plus
-									i.fa.fa-youtube
-									i.fa.fa-instagram
+									a(href="#")
+										i.fa.fa-facebook
+									a(href="#")
+										i.fa.fa-vk
+									a(href="#")
+										i.fa.fa-twitter
+									a(href="#")
+										i.fa.fa-google-plus
+									a(href="#")
+										i.fa.fa-youtube
+									a(href="#")
+										i.fa.fa-instagram
 
 							.cabinet-tab-liked-right
 								.cabinet-tab-liked-right-title Список избранного
@@ -174,7 +181,8 @@ body
 					
 					//cabinet tab-el
 					.cabinet-tab-el#cabinet-tab-4.cabinet-private
-						.cabinet-private-wraper
+						form(action="")
+							.cabinet-private-wraper
 							.cabinet-private-title Персональные данные
 							.cabinet-private-form
 								

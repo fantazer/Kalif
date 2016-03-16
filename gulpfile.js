@@ -37,7 +37,7 @@ gulp.task('imagePng',function(){
      .pipe(imagemin({
          progressive: true,
          svgoPlugins: [{removeViewBox: false}],
-         use: [pngquant({quality: '70', speed: 11})]
+         use: [pngquant({quality: '80', speed: 5})]
      }))
      .pipe(gulp.dest('dist/img/'));
  });
@@ -48,7 +48,7 @@ gulp.task('imageJpg',function(){
   .pipe(imagemin({
           progressive: true,
           svgoPlugins: [{removeViewBox: false}],
-          use: [imageminMozjpeg({quality: '70', speed: 11})]
+          use: [imageminMozjpeg({quality: '80', speed: 5})]
       }))
   .pipe(gulp.dest('dist/img/'));
 });

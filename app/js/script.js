@@ -14,6 +14,7 @@ $(document).ready(function(){
 	$('.main-left-menu-news').easytree();
 
 
+
   $('.menu-cat-product').click(function(){
    	if ($(window).width() <= '480'){
 			$('.main-left-menu').slideToggle()
@@ -112,6 +113,13 @@ $('#viewed-product').click(function(){
 				position:['auto','auto'], // position center
 		}); 
 	})
+$('.product-right-count-right-basket').click(function(){
+		$('.basket-commend').bPopup({
+				closeClass:'modal-close',
+				position:['auto','false'], // position center
+		}); 
+	})
+
 
 
 	/* ###### init stickUp  ######*/
@@ -149,7 +157,7 @@ $('#viewed-product').click(function(){
 	 		0:{
 			 	items : 1
 		 	},
-		 	480:{
+		 	680:{
 			 	items : 3
 		 	}
 		 	
@@ -220,6 +228,7 @@ $('.about-tab').responsiveTabs({
          scrollToAccordion: true
          
  });
+
 $('.product-tab').responsiveTabs({
          //rotate: false,
          //startCollapsed: 'accordion',
@@ -229,6 +238,9 @@ $('.product-tab').responsiveTabs({
          scrollToAccordion: true
          
  });
+
+
+$('.write-review-arrow').backTop();
 
 	/* ###### init fancybox  ######*/
 	/* ###### bower i fancybox  ######*/
