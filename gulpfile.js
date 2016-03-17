@@ -204,7 +204,7 @@ gulp.task('see',function(){
 //default
 gulp.task('img',['imagePng' , 'imageJpg']);
 gulp.task('default', ['serve','see']);
-gulp.task('build',['sourcemaps','copy:font','prefix','img','make']);
+gulp.task('build',['copy:font','prefix','img','make']);
 gulp.task('fast-build',['stylus','prefix','jade','copy:js','ftp']);
 
 

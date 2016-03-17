@@ -167,7 +167,7 @@ $('.product-right-count-right-basket').click(function(){
 	 	margin : 10,
 	 	nav:false,
 		nav:true,
-		navText:['<div class="modal-product-nav-el">Предыдущие</div>','<div class="modal-product-nav-el">Слудующие</div>']
+		navText:['<div class="modal-product-nav-el">Предыдущие</div>','<div class="modal-product-nav-el">Следующие</div>']
 	 	}
 	 );
 

@@ -2897,12 +2897,21 @@ ul.easytree-container ul
 .modal-product
 	+below(1280px)
 		width 60%
+	+below(768px)
+		.owl-next,
+		.owl-prev
+			text-align center
+		.modal-product-nav-el
+			font-size 8px
 	display none
 	width 40%
 	.owl-nav
+		flex-wrap wrap
+	
+	.owl-nav
 		flex(between)
 .modal-wraper.modal-product
-	top 10%!important
+	top 4%!important
 .modal-card-wraper
 	margin-bottom 10px
 	cf()
@@ -2987,6 +2996,8 @@ ul.easytree-container ul
 		color grey
 		
 .modal-product-title
+	+below(680px)
+		font-size 14px
 	color #364657
 	font-family Arial
 	font-size 20px
@@ -3124,7 +3135,8 @@ ul.easytree-container ul
 		width 100%
 		margin-bottom 20px
 	display flex
-	width 50%
+	width 48%
+	margin-right 2%
 .basket-commend-top-img
 	width 80px
 	margin-right 20px
@@ -3188,3 +3200,104 @@ ul.easytree-container ul
 
 .basket-commend-card-top-text
 	width 100%
+
+//Only for ie
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+	.menu-cat-want-text-wrap
+		width 220px
+	.menu-cat-want-text-img 
+		img
+			width 80%
+			margin 0 auto
+	.menu-cat-want-text-el
+		display block
+		width 200px
+	.menu-cat-want-text-text
+		text-align center
+	.menu-cat-want
+		&:hover
+			.menu-cat-want-text-wrap
+				display block
+	.header-nav-el
+		display block
+		text-align center
+	.header-basket-top-register .header-basket-reg
+		display block
+	.product-right-count-right-basket,
+	.product-right-count-right-baynow
+		display block
+	.footer-head-el
+		a
+			display block
+	.product-tab 
+		.r-tabs-nav
+			display block
+		li.r-tabs-tab 
+			width 20%
+	.about-tab 
+		.r-tabs-nav
+			display block
+		li.r-tabs-tab 
+			width 18%
+	.cabinet-tab 
+		.r-tabs-nav
+			display block
+		li.r-tabs-tab 
+			width 22%
+	.about-tab-delivery-icon-el img
+		width auto
+	.about-tab-delivery-icon-el
+		width auto
+	.about-tab-paiment-icon-el img
+		width auto
+	.about-tab-paiment-icon-el
+		width auto
+	.button-block
+		display block
+	.cabinet-order-review
+		label
+			margin-right 10px
+	.cabinet-order-review-text
+		flex(between)
+		align-items flex-start
+	.cabinet-tab-liked-left
+		display block
+	.cabinet-tab-el-basket-left-check-el label
+		display block
+	.cabinet-tab-el-basket-left-check
+		width 100%
+	input[type="checkbox"]
+		border 0px
+	.cabinet-private-form-row-input
+		span
+			display block
+	.getProduct-icon-el img
+		width 60px
+	.getProduct-icon-el
+		width auto
+	.breadcrumbs-block-el
+		text-decoration none!important
+	.news-el-info-bottom-more
+		a
+			display block
+	.registration-private-form-row-input
+		span
+			display block
+	.registration-private-wraper
+		input[type="checkbox"]
+			width 24px
+			height 24px
+	.block-pagination-all
+		top -10px
+	.catalog-block-el-title
+		font-size 12px
+	.catalog-block-el-text
+		margin-top 5px
+	.modal-registration-title
+		display block
+	.modal-registration-title-text
+		margin-left 0
+	.modal-registration-title a
+		display block
+		text-align center
+		
