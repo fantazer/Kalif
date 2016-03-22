@@ -124,7 +124,13 @@ $('.product-right-count-right-basket').click(function(){
 		}); 
 	})
 
-
+$('.header-contact-phone').click(function(){
+		$('.get-age').bPopup({
+				closeClass:'get-age-true',
+				position:['auto','auto'], // position center
+		}); 
+		console.log('asd');
+	})
 
 	/* ###### init stickUp  ######*/
 	/* ###### bower i sticky  ######*/

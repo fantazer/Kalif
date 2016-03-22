@@ -65,13 +65,13 @@ gulp.task('prefix', function () {
 
 //Stylus
 gulp.task('stylus', function () {
-  return gulp.src('./app/css/*.styl')
+  return gulp.src('./app/css/style.styl')
     .pipe(cache('stylus'))
+    .pipe(remember('stylus'))
     .pipe(stylus({
         use:[rupture(),axis(),jeet()]
         })).on('error', errorhandler)
     .pipe(gulp.dest('./app/css/'))
-  
 });
 
 //Source map
@@ -216,5 +216,3 @@ gulp.task('fast-see',function(){
 //gulp.task('default', function() {
 //  runSequence('see');
 //});
-
-
