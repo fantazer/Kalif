@@ -851,14 +851,15 @@ textarea {
   line-height: 16px;
 }
 .footer-contact-info-pay {
+  width: 30%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -881,14 +882,12 @@ textarea {
             align-items: center;
     margin-top: 15px;
   }
-}
-@media only screen and (max-width: 480px) {
-  .footer-contact-info-pay {
-    display: none;
+  .footer-contact-info-pay img {
+    width: 60%;
   }
 }
 .footer-contact-info-pay img {
-  margin-left: 20px;
+  margin-right: 5px;
 }
 .footer-contact-soc {
   display: -webkit-box;
@@ -1108,7 +1107,7 @@ textarea {
   top: 55px;
   left: 0;
   width: 100%;
-  z-index: 2000;
+  z-index: 5000;
 }
 .menu-cat-product-sub a {
   color: #2a4457;
@@ -1157,6 +1156,8 @@ textarea {
 }
 .menu-cat-product-sub-el {
   background: #f9f9f9;
+  z-index: 10000;
+  position: relative;
 }
 .easytree-icon {
   display: none !important;
@@ -1834,6 +1835,7 @@ ul.easytree-container ul {
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
+  padding-left: 0 !important;
 }
 .block-pagination-all-val {
   color: #b4b4b4;
@@ -2578,7 +2580,8 @@ ul.easytree-container ul {
           justify-content: flex-start;
 }
 .cabinet-private-form-row-check .cabinet-private-form-row-input input {
-  width: 5%;
+  width: auto;
+  margin-right: 20px;
 }
 .cabinet-private-form-row-check .cabinet-private-form-row-input span {
   width: 95%;
@@ -3570,7 +3573,8 @@ ul.easytree-container ul {
           justify-content: flex-start;
 }
 .registration-private-form-row-check .registration-private-form-row-input input {
-  width: 5%;
+  width: auto;
+  margin-right: 20px;
 }
 @media only screen and (max-width: 768px) {
   .registration-private-form-row-check .registration-private-form-row-input input {
@@ -3578,7 +3582,6 @@ ul.easytree-container ul {
   }
 }
 .registration-private-form-row-check .registration-private-form-row-input span {
-  width: 95%;
   color: #98c3d9;
   font-family: Arial;
   font-size: 13px;
@@ -3597,6 +3600,9 @@ ul.easytree-container ul {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+}
+.registration-private-form-row-pol .registration-private-form-row-input input {
+  margin-right: 20px;
 }
 .registration-private-form-row-input-el {
   display: -webkit-box;
@@ -4274,6 +4280,11 @@ ul.easytree-container ul {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-box-align: start !important;
+  -webkit-align-items: flex-start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+  margin-top: 10px;
 }
 .news-el-info-bottom-comments {
   color: #9d9d9d;
@@ -5317,6 +5328,7 @@ ul.easytree-container ul {
     width: 49%;
     margin-left: 0%;
     margin-right: 2%;
+    padding: 10px;
   }
   .catalog-block-el:before,
   .catalog-block-el:after {
@@ -5379,6 +5391,12 @@ ul.easytree-container ul {
   padding: 5px;
   background-color: #98c3d9;
   position: relative;
+  width: 30px !important;
+}
+@media only screen and (max-width: 768px) {
+  .catalog-block-el-number {
+    font-size: 14px;
+  }
 }
 .catalog-block-el-number:before {
   content: '';
@@ -5541,6 +5559,7 @@ ul.easytree-container ul {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  visibility: hidden;
 }
 .srotby-block-left-icon-el {
   margin-right: 10px;
@@ -6084,7 +6103,7 @@ ul.easytree-container ul {
   width: 42px;
   height: 42px;
   background: url("../img/icon-sale.png") no-repeat;
-  z-index: 4000;
+  z-index: 1000;
   background-size: cover;
 }
 .card-coil:before {
@@ -6095,7 +6114,7 @@ ul.easytree-container ul {
   width: 42px;
   height: 42px;
   background: url("../img/icon-coil.png") no-repeat;
-  z-index: 4000;
+  z-index: 1000;
   background-size: cover;
 }
 .card-commend:before {
@@ -6106,7 +6125,7 @@ ul.easytree-container ul {
   width: 42px;
   height: 42px;
   background: url("../img/icon-commend.png") no-repeat;
-  z-index: 4000;
+  z-index: 1000;
   background-size: cover;
 }
 .card-hit:before {
@@ -6117,7 +6136,7 @@ ul.easytree-container ul {
   width: 42px;
   height: 42px;
   background: url("../img/icon-hit.png") no-repeat;
-  z-index: 4000;
+  z-index: 1000;
   background-size: cover;
 }
 .card-lider:before {
@@ -6128,18 +6147,19 @@ ul.easytree-container ul {
   width: 42px;
   height: 42px;
   background: url("../img/icon-hit.png") no-repeat;
-  z-index: 4000;
+  z-index: 1000;
   background-size: cover;
 }
 .write-review {
   position: fixed;
   right: 0;
-  bottom: 15%;
+  bottom: 18%;
   z-index: 10000;
 }
 @media only screen and (max-width: 768px) {
   .write-review {
-    display: none !important;
+    bottom: 30%;
+    width: 40px;
   }
 }
 .write-review:hover {
@@ -6154,7 +6174,9 @@ ul.easytree-container ul {
 }
 @media only screen and (max-width: 768px) {
   .write-review-arrow {
-    display: none !important;
+    width: 35px;
+    bottom: 10% !important;
+    right: 3px !important;
   }
 }
 .write-review-arrow:hover {

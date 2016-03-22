@@ -13,7 +13,9 @@ $(document).ready(function(){
 	$('.main-left-menu').easytree();
 	$('.main-left-menu-news').easytree();
 
-
+	$('.write-review-arrow').backTop({
+		'speed' : 100
+	});
 
   $('.menu-cat-product').click(function(){
    	if ($(window).width() <= '480'){
@@ -85,9 +87,11 @@ $(document).ready(function(){
 		    });
    	}
 
-   	$('.main-left-sort-title').click(function(){
-   		$('.main-left-sort-block').slideToggle()
-   	})
+   	if ($(window).width() < '768' ){
+	   	$('.main-left-sort-title').click(function(){
+	   		$('.main-left-sort-block').slideToggle()
+	   	})
+   }
 	/* ###### init EasyDropDown style for selects  ######*/
 	/* ###### bower i easydropdown  ######*/
 	/*<select class="dropdown"> add class (dropdown)
@@ -240,7 +244,7 @@ $('.product-tab').responsiveTabs({
  });
 
 
-$('.write-review-arrow').backTop();
+
 
 	/* ###### init fancybox  ######*/
 	/* ###### bower i fancybox  ######*/

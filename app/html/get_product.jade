@@ -78,14 +78,14 @@ body
 										option 23:00
 										option 23:00
 
-							.getProduct-form-bonus
-								.getProduct-form-bonus-title Бонусная карта
-								.getProduct-form-bonus-text Если у Вас есть бонусная карта нашего магазина, введите ее номер:
-								input(type="text")
-							.getProduct-form-bonus
-								.getProduct-form-bonus-title Подарочный сертификат
-								.getProduct-form-bonus-text Если у Вас есть подарочный сертификат нашего магазина, введите его номер:
-								input(type="text")
+							//- .getProduct-form-bonus
+							//- 	.getProduct-form-bonus-title Бонусная карта
+							//- 	.getProduct-form-bonus-text Если у Вас есть бонусная карта нашего магазина, введите ее номер:
+							//- 	input(type="text")
+							//- .getProduct-form-bonus
+							//- 	.getProduct-form-bonus-title Подарочный сертификат
+							//- 	.getProduct-form-bonus-text Если у Вас есть подарочный сертификат нашего магазина, введите его номер:
+							//- 	input(type="text")
 
 							.getProduct-delivery
 								.getProduct-delivery-title Способ доставки:
@@ -95,11 +95,11 @@ body
 										span Курьером по Москве
 									.getProduct-delivery-type-val 350 руб.
 
-								.getProduct-delivery-type
-									.getProduct-delivery-type-text
-										input(type="checkbox")
-										span ЕМС Почта России
-									.getProduct-delivery-type-val 350 руб.
+								//- .getProduct-delivery-type
+								//- 	.getProduct-delivery-type-text
+								//- 		input(type="checkbox")
+								//- 		span ЕМС Почта России
+								//- 	.getProduct-delivery-type-val 350 руб.
 
 								.getProduct-delivery-type
 									.getProduct-delivery-type-text
@@ -111,7 +111,7 @@ body
 									.getProduct-delivery-type-text
 										input(type="checkbox")
 										span Забрать из магазина новый магазин
-									.getProduct-delivery-type-val 350 руб.
+									.getProduct-delivery-type-val 350 руб. 
 
 							.getProduct-pay
 								.getProduct-pay-title Способ оплаты:
@@ -120,9 +120,9 @@ body
 									span Оплата наличными при получении
 								.getProduct-pay-type
 									input(type="checkbox")
-									span Онлайн оплата через (Робокасса)
+									span Онлайн оплата через  
 								.getProduct-pay-icon
-									- for (var b = 0; b < 7; b++)
+									- for (var b = 0; b < 5; b++)
 										.getProduct-icon-el
 											img(src="img/icon-pay-#{b+1}.png", alt="")
 
