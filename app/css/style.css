@@ -154,6 +154,12 @@ textarea {
   -webkit-border-radius: 5px;
           border-radius: 5px;
 }
+@media only screen and (max-width: 768px) {
+  .get-age {
+    width: 80%;
+    text-align: center;
+  }
+}
 .get-age a {
   margin-right: 20px;
   color: #fff;
