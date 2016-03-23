@@ -6528,3 +6528,12 @@ ul.easytree-container ul {
     text-align: center;
   }
 }
+.footer-contact-info-pay-el img {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .footer-contact-info-pay-el img {
+    width: 70%;
+    margin: 0 auto;
+  }
+}

@@ -65,13 +65,14 @@ gulp.task('prefix', function () {
 
 //Stylus
 gulp.task('stylus', function () {
-  return gulp.src('./app/css/style.styl')
+  return gulp.src('./app/css/*.styl')
     .pipe(cache('stylus'))
-    .pipe(remember('stylus'))
+    .pipe(remember('make'))
     .pipe(stylus({
         use:[rupture(),axis(),jeet()]
         })).on('error', errorhandler)
     .pipe(gulp.dest('./app/css/'))
+  
 });
 
 //Source map
@@ -124,9 +125,10 @@ gulp.task('copy:font',function(){
         .pipe(gulp.dest('./dist/fonts/'))
   })
 
-gulp.task('copy:js',function(){
-  return gulp.src('./app/js/script.js')
-         .pipe(gulp.dest('./dist/js/'))
+gulp.task('copy:files',function(){
+  return   gulp.src('app/css/style.css')
+          .pipe(minifyCss())
+          .pipe(gulp.dest('dist/css/'));
   })
 
 //Show error
@@ -146,11 +148,7 @@ function errorhandler(a) {
 //useref
 gulp.task('make', function () {
   var assets = useref.assets();
-   gulp.src('app/js/*.js')
-  .pipe(gulp.dest('dist/js/'));
 
-   gulp.src('app/css/style.css')
-  .pipe(gulp.dest('dist/css/'));
   var assets = useref.assets();
   return gulp.src('app/*.html')
       .pipe(cache('make'))
@@ -203,7 +201,7 @@ gulp.task('see',function(){
 //default
 gulp.task('img',['imagePng' , 'imageJpg']);
 gulp.task('default', ['serve','see']);
-gulp.task('build',['copy:font','prefix','make']);
+gulp.task('build',['copy:font','prefix','copy:files','make']);
 gulp.task('fast-build',['stylus','prefix','jade','copy:js','ftp']);
 
 
